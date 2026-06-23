@@ -1,0 +1,318 @@
+{
+  "common": {
+    "nav": {
+      "akuris": "AKuris",
+      "technology": "Technology",
+      "company": "Company",
+      "career": "Career",
+      "contact": "Contact"
+    },
+    "cta": {
+      "bookDemo": "Book a demo",
+      "getInTouch": "Get in touch",
+      "exploreAkuris": "Explore AKuris",
+      "discoverTech": "Discover the technology",
+      "planVisit": "Plan your visit",
+      "seeAction": "See AKuris in action",
+      "learnMore": "Learn more",
+      "submit": "Send message",
+      "downloadSpec": "Download spec sheet [PDF]",
+      "findAudiologist": "Find certified audiologist"
+    },
+    "labels": {
+      "award": "1st place · Innovation Award Berlin Brandenburg 2024",
+      "patents": "9 own patents",
+      "euFunded": "Co-funded by the European Union",
+      "madeInGermany": "Made in Germany",
+      "founderPatents": "27 founder patents",
+      "euBrandenburg": "Co-financed by the European Union and the State of Brandenburg"
+    },
+    "footer": {
+      "mission": "Opening a new technological door with digital optical holography.",
+      "contact": "Contact",
+      "addressNotice": "Please note: from 1 March 2026 our address is Am Luftschiffhafen 1, 14471 Potsdam.",
+      "legal": "Legal",
+      "privacy": "Datenschutz",
+      "imprint": "Impressum",
+      "copyright": "© AKmira Optronics 2026"
+    }
+  },
+  "home": {
+    "hero": {
+      "eyebrow": "World's first holographic 3D ear scanner",
+      "title": "Hear better. Fit perfectly.",
+      "subhead": "AKuris scans the ear canal in seconds — no contact, no mess, no remakes. Real-time 3D data for the next generation of personalised hearing systems."
+    },
+    "problem": {
+      "eyebrow": "The problem",
+      "title": "Conventional ear impressions are slow, messy, and easy to get wrong.",
+      "card1": "Uncomfortable silicone impressions",
+      "card2": "Days of waiting and costly remakes",
+      "card3": "Fit depends on a manual process"
+    },
+    "solution": {
+      "eyebrow": "The solution",
+      "title": "A digital scan in seconds. A perfect fit the first time.",
+      "text": "AKuris captures the ear canal in 3D using light — contactless, hygienic, and precise. The result is real-time digital data ready for the manufacture of custom hearing systems."
+    },
+    "benefits": {
+      "eyebrow": "Why AKuris",
+      "title": "Better for patients. Better for clinics. Better for the planet.",
+      "faster": {
+        "title": "Faster",
+        "desc": "A full 3D scan in seconds, not a multi-step impression."
+      },
+      "precise": {
+        "title": "More precise",
+        "desc": "Real-time digital 3D data of the ear canal."
+      },
+      "hygienic": {
+        "title": "More hygienic",
+        "desc": "Fully non-contact. Nothing inserted, nothing to clean up."
+      },
+      "comfortable": {
+        "title": "More comfortable",
+        "desc": "A calm, quick experience for the patient."
+      },
+      "workflow": {
+        "title": "Digital workflow",
+        "desc": "Data flows straight to manufacturing. No remakes."
+      },
+      "sustainable": {
+        "title": "More sustainable",
+        "desc": "Less material waste than conventional impressions."
+      }
+    },
+    "audience": {
+      "eyebrow": "Built for everyone in the room",
+      "patients": {
+        "title": "For patients",
+        "desc": "A better start to better hearing — fast, clean, and comfortable."
+      },
+      "audiologists": {
+        "title": "For audiologists & clinics",
+        "desc": "Precise digital data and a seamless workflow, with no remakes."
+      }
+    },
+    "platform": {
+      "eyebrow": "More than a product",
+      "title": "A new 3D imaging platform — starting with hearing.",
+      "text": "AKuris is the first application of AKmira's digital optical holography — a technology compact enough to fit on a fraction of a fingertip. The same platform opens the door to 3D endoscopy, security, and beyond."
+    },
+    "recognition": {
+      "eyebrow": "Recognised innovation"
+    },
+    "tradefair": {
+      "eyebrow": "Meet us in person",
+      "title": "See AKuris live at EUHA 2025, Nuremberg.",
+      "detail": "69th International Congress of Hearing Aid Acousticians · Booth 408 + Live Area."
+    },
+    "ctaSection": {
+      "title": "Ready to see the future of ear scanning?"
+    }
+  },
+  "akuris": {
+    "hero": {
+      "title": "AKuris — the first non-contact 3D ear canal scanner.",
+      "subhead": "The next generation of personalised hearing systems."
+    },
+    "problemText": "Traditional audiologist molds require filling the patient's ear with cold, heavy silicone paste, which is often painful, prone to physical distortion, and requires shipping physical impressions to manufacturers. This adds delays, environmental waste, and costly remakes. AKuris eliminates this manual bottleneck.",
+    "steps": {
+      "eyebrow": "How it works",
+      "title": "Holographic scanning in 3 steps",
+      "step1": {
+        "num": "01",
+        "title": "Scan",
+        "desc": "A full 3D scan of the ear canal in seconds. Non-contact and completely hygienic."
+      },
+      "step2": {
+        "num": "02",
+        "title": "3D Model",
+        "desc": "The device computes real-time digital 3D data of the ear canal's exact topography."
+      },
+      "step3": {
+        "num": "03",
+        "title": "Perfect Fit",
+        "desc": "Data is sent instantly to custom earmold manufacturers. Zero shipping, zero remakes."
+      }
+    },
+    "demo": {
+      "eyebrow": "Live Demonstration",
+      "title": "Real-time holographic precision",
+      "caption": "Watch AKuris scan an ear canal in real time. Use the visualizer below to inspect the resulting 3D point cloud.",
+      "visualizerTitle": "Interactive 3D Scan Visualizer [PLACEHOLDER]",
+      "instructions": "Use mouse/touch to rotate the captured 3D ear canal model."
+    },
+    "applications": {
+      "eyebrow": "Applications",
+      "title": "Engineered for diverse audiology needs",
+      "hearingAids": {
+        "title": "Custom hearing aids",
+        "desc": "Perfect fit for everyday hearing support, ensuring maximum acoustic seal."
+      },
+      "monitors": {
+        "title": "In-ear monitors & hearables",
+        "desc": "Precision positioning for custom musicians' monitors and commercial high-end earbuds."
+      },
+      "practices": {
+        "title": "Audiology clinics & ENT practices",
+        "desc": "A modern, professional, hygienic digital workflow that builds immediate patient trust."
+      }
+    },
+    "futureFairs": {
+      "title": "Future Trade Fairs & Events",
+      "placeholderText": "Future events and presentations will be announced shortly. Check back for live demo scheduling."
+    },
+    "ctas": {
+      "eyebrow": "Next Steps",
+      "title": "Transform your custom earmold workflow today"
+    }
+  },
+  "technology": {
+    "hero": {
+      "title": "Digital optical holography — seeing in 3D with light."
+    },
+    "explainer": {
+      "plain": "AKmira's cameras read the 3D shape of a surface using light — the way sonar reads distance using sound, but with photons. No moving parts, no mechanical refocusing, and small enough to fit on a fraction of a fingertip.",
+      "technicalHeader": "Technical Detail (For Specialists)",
+      "technical": "Digital optical holography is an extension of known interference methods like Optical Coherence Tomography (OCT). By capturing phase interference between a reference beam and the backscattered light, our system measures surface topography and subsurface layers (~3 mm) without physical contact, operating at speed and optical resolution limits."
+    },
+    "advantages": {
+      "eyebrow": "Key Advantages",
+      "title": "Why holographic imaging?",
+      "mini": "Extreme miniaturisation",
+      "refocus": "No mechanical refocusing",
+      "stitching": "Precise optical stitching",
+      "distance": "Depth independent of distance",
+      "subsurface": "Sub-surface measurement (~3 mm)",
+      "microscope": "Acts as local 3D operating microscope"
+    },
+    "roadmap": {
+      "eyebrow": "Camera Roadmap",
+      "title": "Our path to extreme miniaturisation",
+      "gen1": {
+        "title": "GEN 1 Prototype",
+        "desc": "First-generation ear scanner validation prototype and laboratory testbed."
+      },
+      "gen2": {
+        "title": "GEN 2 Clinical Scanner",
+        "desc": "Commercial medical scanner with integrated co-axial light path."
+      },
+      "gen3": {
+        "title": "GEN 3 Golden Eye",
+        "desc": "Ultra-miniature sensor, shrinking the camera to a fraction of a 1-cent coin."
+      }
+    },
+    "applications": {
+      "eyebrow": "Future Applications",
+      "title": "A single platform for multiple industries",
+      "endoscopy": {
+        "title": "Medical technology & 3D endoscopy",
+        "desc": "Contactless internal 3D scanning during surgical procedures for real-time visualization."
+      },
+      "security": {
+        "title": "Security technology",
+        "desc": "Contactless, high-precision 3D fingerprint acquisition for foolproof biometrics."
+      },
+      "zoom": {
+        "title": "3D zoom camera",
+        "desc": "Long-range 3D zoom sensing up to ~1 km, weighing under 100 g for drone and aerospace payloads."
+      }
+    }
+  },
+  "company": {
+    "hero": {
+      "eyebrow": "About AKmira",
+      "title": "Redefining optics in the heart of Potsdam"
+    },
+    "mission": {
+      "title": "Founder's Vision",
+      "text": "We are opening a new technological door, combining 'Made in Germany' engineering with global ambition. AKmira designs deep-tech optical platforms that redefine medical imaging."
+    },
+    "founders": {
+      "title": "Our Leadership Team",
+      "knuettel": {
+        "name": "Dr. Alexander Knüttel",
+        "role": "Founder & CEO",
+        "bio": "Physicist, serial founder (previously ISIS optronics, sentronics metrology), first author on 27 patents, leading researcher in digital interferometry."
+      },
+      "filling": {
+        "name": "Birte Filling",
+        "role": "Co-founder",
+        "bio": "Management, B2B marketing, and the 'world of hearing' specialist."
+      }
+    },
+    "team": {
+      "title": "The Team",
+      "text": "Our interdisciplinary team in Potsdam brings together leading experts in physics, electrical engineering, software systems, business development, and regulatory affairs."
+    }
+  },
+  "career": {
+    "hero": {
+      "title": "Build the future of medical deep-tech."
+    },
+    "intro": "Join us in Potsdam to build a revolutionary 'Made-in-Germany' technology. We are looking for passionate, curious minds to help us develop next-generation holographic cameras.",
+    "perks": {
+      "title": "Why AKmira?",
+      "flexible": "Flexible & remote-friendly",
+      "startup": "Young startup environment",
+      "freedom": "Creative freedom",
+      "responsibility": "Real responsibility",
+      "canteen": "In-house canteen",
+      "transport": "Excellent transport links",
+      "ticket": "Job ticket"
+    },
+    "jobs": {
+      "title": "Open Positions",
+      "student": {
+        "title": "Working Student - Web Design & UI/UX",
+        "dept": "Marketing & IT",
+        "location": "Potsdam / Hybrid",
+        "desc": "Maintain and enhance the digital face of AKmira Optronics. Work closely with product management and marketing."
+      },
+      "optical": {
+        "title": "Senior Optical Systems Engineer",
+        "dept": "R&D",
+        "location": "Potsdam (On-site)",
+        "desc": "Design and refine co-axial reference beams and phase interference assemblies for GEN 2/3 sensors."
+      },
+      "embedded": {
+        "title": "Embedded Software Developer",
+        "dept": "Software",
+        "location": "Potsdam / Hybrid",
+        "desc": "Implement low-latency point-cloud rendering pipelines and hardware sensor interface drivers."
+      }
+    }
+  },
+  "contact": {
+    "hero": {
+      "title": "Let's discuss the future of medical 3D imaging."
+    },
+    "form": {
+      "title": "Send a Message / Request Demo",
+      "name": "Full Name",
+      "email": "Email Address",
+      "org": "Organisation",
+      "role": {
+        "label": "Your Role",
+        "patient": "Patient / Hearing Aid Wearer",
+        "audiologist": "Audiologist / Clinic Owner",
+        "press": "Press / Media",
+        "other": "Other Partner"
+      },
+      "message": "Message",
+      "consent": "I consent to having this website store my submitted info so they can respond to my inquiry.",
+      "success": "Thank you! Your message has been sent successfully. We will get back to you shortly.",
+      "error": "There was an error sending your message. Please check the fields and try again or email us directly at info@akmira-optronics.de.",
+      "required": "This field is required",
+      "emailInvalid": "Please enter a valid email address",
+      "consentRequired": "You must accept the privacy policy to submit the form"
+    },
+    "details": {
+      "title": "Direct Contact",
+      "email": "Email",
+      "phone": "Phone",
+      "office": "Potsdam Head Office"
+    }
+  }
+}

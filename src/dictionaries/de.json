@@ -1,0 +1,318 @@
+{
+  "common": {
+    "nav": {
+      "akuris": "AKuris",
+      "technology": "Technologie",
+      "company": "Unternehmen",
+      "career": "Karriere",
+      "contact": "Kontakt"
+    },
+    "cta": {
+      "bookDemo": "Demo buchen",
+      "getInTouch": "Kontakt aufnehmen",
+      "exploreAkuris": "AKuris erkunden",
+      "discoverTech": "Technologie entdecken",
+      "planVisit": "Besuch planen",
+      "seeAction": "AKuris in Aktion sehen",
+      "learnMore": "Mehr erfahren",
+      "submit": "Nachricht senden",
+      "downloadSpec": "Datenblatt herunterladen [PDF]",
+      "findAudiologist": "Zertifizierten Akustiker finden"
+    },
+    "labels": {
+      "award": "1. Platz · Innovationspreis Berlin Brandenburg 2024",
+      "patents": "9 eigene Patente",
+      "euFunded": "Kofinanziert von der Europäischen Union",
+      "madeInGermany": "Made in Germany",
+      "founderPatents": "27 Patente unseres Gründers",
+      "euBrandenburg": "Kofinanziert durch die Europäische Union und das Land Brandenburg"
+    },
+    "footer": {
+      "mission": "Mit digitaler optischer Holografie ein neues technologisches Fenster öffnen.",
+      "contact": "Kontakt",
+      "addressNotice": "Bitte beachten Sie: Ab dem 1. März 2026 lautet unsere Adresse: Am Luftschiffhafen 1, 14471 Potsdam.",
+      "legal": "Rechtliches",
+      "privacy": "Datenschutz",
+      "imprint": "Impressum",
+      "copyright": "© AKmira Optronics 2026"
+    }
+  },
+  "home": {
+    "hero": {
+      "eyebrow": "Weltweit erster holografischer 3D-Gehörgangsscanner",
+      "title": "Besser hören. Perfekt sitzen.",
+      "subhead": "AKuris scannt den Gehörgang in Sekundenschnelle – berührungslos, sauber, ohne Abformmasse. Digitale 3D-Echtzeitdaten für die nächste Generation personalisierter Hörsysteme."
+    },
+    "problem": {
+      "eyebrow": "Das Problem",
+      "title": "Konventionelle Ohrabdrücke sind langsam, unangenehm und fehleranfällig.",
+      "card1": "Unangenehme Silikon-Abformmassen im Ohr",
+      "card2": "Tagelange Wartezeiten und teure Neuanfertigungen",
+      "card3": "Passform hängt von einem manuellen Prozess ab"
+    },
+    "solution": {
+      "eyebrow": "Die Lösung",
+      "title": "Ein digitaler Scan in Sekunden. Perfekter Sitz beim ersten Mal.",
+      "text": "AKuris erfasst den Gehörgang in 3D mittels Licht – berührungslos, hygienisch und präzise. Das Ergebnis sind digitale 3D-Echtzeitdaten, bereit für die direkte Herstellung individueller Hörsysteme."
+    },
+    "benefits": {
+      "eyebrow": "Warum AKuris",
+      "title": "Besser für Patienten. Besser für Akustiker. Besser für die Umwelt.",
+      "faster": {
+        "title": "Schneller",
+        "desc": "Ein vollständiger 3D-Scan in Sekunden statt eines mehrstufigen Abdruckprozesses."
+      },
+      "precise": {
+        "title": "Präziser",
+        "desc": "Digitale 3D-Echtzeitdaten des Gehörgangs."
+      },
+      "hygienic": {
+        "title": "Hygienischer",
+        "desc": "Vollständig berührungslos. Nichts wird eingeführt, keine Reinigung erforderlich."
+      },
+      "comfortable": {
+        "title": "Angenehmer",
+        "desc": "Ein ruhiges, schnelles und komfortables Erlebnis für den Patienten."
+      },
+      "workflow": {
+        "title": "Digitaler Workflow",
+        "desc": "Daten fließen direkt in die Produktion. Keine manuellen Retouren."
+      },
+      "sustainable": {
+        "title": "Nachhaltiger",
+        "desc": "Weniger Materialabfall im Vergleich zu herkömmlichen Silikonabdrücken."
+      }
+    },
+    "audience": {
+      "eyebrow": "Entwickelt für alle Beteiligten",
+      "patients": {
+        "title": "Für Patienten",
+        "desc": "Ein besserer Start zu besserem Hören – schnell, sauber und angenehm."
+      },
+      "audiologists": {
+        "title": "Für Hörakustiker & Kliniken",
+        "desc": "Präzise digitale Daten und ein nahtloser Workflow ohne manuelle Neuanfertigungen."
+      }
+    },
+    "platform": {
+      "eyebrow": "Mehr als nur ein Produkt",
+      "title": "Eine neue 3D-Bildgebungsplattform – beginnend mit dem Gehör.",
+      "text": "AKuris ist die erste Anwendung der digitalen optischen Holografie von AKmira – eine Technologie, die kompakt genug ist, um auf einen Bruchteil einer Fingerkuppe zu passen. Dieselbe Plattform öffnet Türen für die 3D-Endoskopie, Sicherheitstechnik und darüber hinaus."
+    },
+    "recognition": {
+      "eyebrow": "Anerkannte Innovation"
+    },
+    "tradefair": {
+      "eyebrow": "Treffen Sie uns persönlich",
+      "title": "Erleben Sie AKuris live auf der EUHA 2025 in Nürnberg.",
+      "detail": "69. Internationaler Hörakustiker-Kongress · Stand 408 + Live Area."
+    },
+    "ctaSection": {
+      "title": "Bereit, die Zukunft des Ohrscannens zu erleben?"
+    }
+  },
+  "akuris": {
+    "hero": {
+      "title": "AKuris – der erste berührungslose 3D-Gehörgangsscanner.",
+      "subhead": "Die nächste Generation personalisierter Hörsysteme."
+    },
+    "problemText": "[DE PLACEHOLDER] Traditional audiologist molds require filling the patient's ear with cold, heavy silicone paste, which is often painful, prone to physical distortion, and requires shipping physical impressions to manufacturers. This adds delays, environmental waste, and costly remakes. AKuris eliminates this manual bottleneck.",
+    "steps": {
+      "eyebrow": "Wie es funktioniert",
+      "title": "Holografisches Scannen in 3 Schritten",
+      "step1": {
+        "num": "01",
+        "title": "Scan",
+        "desc": "[DE PLACEHOLDER] A full 3D scan of the ear canal in seconds. Non-contact and completely hygienic."
+      },
+      "step2": {
+        "num": "02",
+        "title": "3D-Modell",
+        "desc": "[DE PLACEHOLDER] The device computes real-time digital 3D data of the ear canal's exact topography."
+      },
+      "step3": {
+        "num": "03",
+        "title": "Perfekter Sitz",
+        "desc": "[DE PLACEHOLDER] Data is sent instantly to custom earmold manufacturers. Zero shipping, zero remakes."
+      }
+    },
+    "demo": {
+      "eyebrow": "Live-Demonstration",
+      "title": "Holografische Präzision in Echtzeit",
+      "caption": "[DE PLACEHOLDER] Watch AKuris scan an ear canal in real time. Use the visualizer below to inspect the resulting 3D point cloud.",
+      "visualizerTitle": "Interaktiver 3D-Scan-Visualisierer [PLATZHALTER]",
+      "instructions": "[DE PLACEHOLDER] Use mouse/touch to rotate the captured 3D ear canal model."
+    },
+    "applications": {
+      "eyebrow": "Anwendungsbereiche",
+      "title": "Entwickelt für die Anforderungen der Hörakustik",
+      "hearingAids": {
+        "title": "Individuelle Hörgeräte",
+        "desc": "[DE PLACEHOLDER] Perfect fit for everyday hearing support, ensuring maximum acoustic seal."
+      },
+      "monitors": {
+        "title": "In-Ear-Monitore & Hearables",
+        "desc": "[DE PLACEHOLDER] Precision positioning for custom musicians' monitors and commercial high-end earbuds."
+      },
+      "practices": {
+        "title": "Hörakustik-Fachgeschäfte & HNO-Praxen",
+        "desc": "[DE PLACEHOLDER] A modern, professional, hygienic digital workflow that builds immediate patient trust."
+      }
+    },
+    "futureFairs": {
+      "title": "Zukünftige Messen & Veranstaltungen",
+      "placeholderText": "[DE PLACEHOLDER] Future events and presentations will be announced shortly. Check back for live demo scheduling."
+    },
+    "ctas": {
+      "eyebrow": "Nächste Schritte",
+      "title": "Transformieren Sie noch heute Ihren Workflow für Gehörganganpassungen"
+    }
+  },
+  "technology": {
+    "hero": {
+      "title": "Digitale optische Holografie – 3D-Sehen mit Licht."
+    },
+    "explainer": {
+      "plain": "Die Kameras von AKmira lesen die 3D-Form einer Oberfläche mithilfe von Licht – ähnlich wie ein Sonar Entfernungen mit Schall misst, jedoch mit Photonen. Keine beweglichen Teile, keine mechanische Fokussierung und klein genug, um auf einem Bruchteil einer Fingerkuppe Platz zu finden.",
+      "technicalHeader": "Technische Details (Für Fachpublikum)",
+      "technical": "[DE PLACEHOLDER] Digital optical holography is an extension of known interference methods like Optical Coherence Tomography (OCT). By capturing phase interference between a reference beam and the backscattered light, our system measures surface topography and subsurface layers (~3 mm) without physical contact, operating at speed and optical resolution limits."
+    },
+    "advantages": {
+      "eyebrow": "Hauptvorteile",
+      "title": "Warum holografische Bildgebung?",
+      "mini": "Extreme Miniaturisierung",
+      "refocus": "Keine mechanische Refokussierung",
+      "stitching": "Präzises optisches Zusammenfügen (Stitching)",
+      "distance": "Tiefe unabhängig von Entfernung",
+      "subsurface": "Suboberflächenmessung (~3 mm)",
+      "microscope": "Fungiert als lokales 3D-Operationsmikroskop"
+    },
+    "roadmap": {
+      "eyebrow": "Kamera-Roadmap",
+      "title": "Unser Weg zur extremen Miniaturisierung",
+      "gen1": {
+        "title": "GEN 1 Prototyp",
+        "desc": "[DE PLACEHOLDER] First-generation ear scanner validation prototype and laboratory testbed."
+      },
+      "gen2": {
+        "title": "GEN 2 Klinischer Scanner",
+        "desc": "[DE PLACEHOLDER] Commercial medical scanner with integrated co-axial light path."
+      },
+      "gen3": {
+        "title": "GEN 3 Golden Eye",
+        "desc": "[DE PLACEHOLDER] Ultra-miniature sensor, shrinking the camera to a fraction of a 1-cent coin."
+      }
+    },
+    "applications": {
+      "eyebrow": "Zukünftige Anwendungen",
+      "title": "Eine einzige Plattform für mehrere Industrien",
+      "endoscopy": {
+        "title": "Medizintechnik & 3D-Endoskopie",
+        "desc": "[DE PLACEHOLDER] Contactless internal 3D scanning during surgical procedures for real-time visualization."
+      },
+      "security": {
+        "title": "Sicherheitstechnik",
+        "desc": "[DE PLACEHOLDER] Contactless, high-precision 3D fingerprint acquisition for foolproof biometrics."
+      },
+      "zoom": {
+        "title": "3D-Zoom-Kamera",
+        "desc": "[DE PLACEHOLDER] Long-range 3D zoom sensing up to ~1 km, weighing under 100 g for drone and aerospace payloads."
+      }
+    }
+  },
+  "company": {
+    "hero": {
+      "eyebrow": "Über AKmira",
+      "title": "Optik neu definieren im Herzen von Potsdam"
+    },
+    "mission": {
+      "title": "Vision der Gründer",
+      "text": "Wir öffnen ein neues technologisches Fenster und verbinden deutsche Ingenieurskunst ('Made in Germany') mit globalem Anspruch. AKmira entwickelt Deep-Tech-Optikplattformen, die die medizinische Bildgebung neu definieren."
+    },
+    "founders": {
+      "title": "Unsere Führung",
+      "knuettel": {
+        "name": "Dr. Alexander Knüttel",
+        "role": "Gründer & CEO",
+        "bio": "Physiker, Seriengründer (zuvor ISIS optronics, sentronics metrology), Erstautor von 27 Patenten, führender Forscher im Bereich digitaler Interferometrie."
+      },
+      "filling": {
+        "name": "Birte Filling",
+        "role": "Mitgründerin",
+        "bio": "Management, B2B-Marketing und Spezialistin für die 'Welt des Hörens'."
+      }
+    },
+    "team": {
+      "title": "Das Team",
+      "text": "Unser interdisziplinäres Team in Potsdam vereint führende Experten aus Physik, Elektrotechnik, Softwaresystemen, Business Development und Regulatory Affairs."
+    }
+  },
+  "career": {
+    "hero": {
+      "title": "Bauen Sie die Zukunft der medizinischen Deep-Tech mit auf."
+    },
+    "intro": "Kommen Sie nach Potsdam, um eine revolutionäre Technologie 'Made in Germany' mitzugestalten. Wir suchen leidenschaftliche, neugierige Köpfe, die uns bei der Entwicklung holografischer Kameras der nächsten Generation unterstützen.",
+    "perks": {
+      "title": "Warum AKmira?",
+      "flexible": "Flexibel & Remote-freundlich",
+      "startup": "Junges Startup-Umfeld",
+      "freedom": "Kreative Freiheit",
+      "responsibility": "Echte Verantwortung",
+      "canteen": "Eigene Kantine vor Ort",
+      "transport": "Hervorragende Verkehrsanbindung",
+      "ticket": "Jobticket"
+    },
+    "jobs": {
+      "title": "Offene Stellen",
+      "student": {
+        "title": "Werkstudent - Webdesign & UI/UX",
+        "dept": "Marketing & IT",
+        "location": "Potsdam / Hybrid",
+        "desc": "Pflege und Weiterentwicklung der digitalen Präsenz von AKmira Optronics. Enge Zusammenarbeit mit Produktmanagement und Marketing."
+      },
+      "optical": {
+        "title": "Senior Optical Systems Engineer (m/w/d)",
+        "dept": "R&D",
+        "location": "Potsdam (Vor Ort)",
+        "desc": "[DE PLACEHOLDER] Design and refine co-axial reference beams and phase interference assemblies for GEN 2/3 sensors."
+      },
+      "embedded": {
+        "title": "Embedded Software Developer (m/w/d)",
+        "dept": "Software",
+        "location": "Potsdam / Hybrid",
+        "desc": "[DE PLACEHOLDER] Implement low-latency point-cloud rendering pipelines and hardware sensor interface drivers."
+      }
+    }
+  },
+  "contact": {
+    "hero": {
+      "title": "Lassen Sie uns über die Zukunft der medizinischen 3D-Bildgebung sprechen."
+    },
+    "form": {
+      "title": "Nachricht senden / Demo anfordern",
+      "name": "Vollständiger Name",
+      "email": "E-Mail-Adresse",
+      "org": "Organisation",
+      "role": {
+        "label": "Ihre Rolle",
+        "patient": "Patient / Hörgeräteträger",
+        "audiologist": "Hörakustiker / Klinikinhaber",
+        "press": "Presse / Medien",
+        "other": "Anderer Partner"
+      },
+      "message": "Nachricht",
+      "consent": "Ich willige ein, dass diese Website meine Daten speichert, um meine Anfrage zu beantworten.",
+      "success": "Vielen Dank! Ihre Nachricht wurde erfolgreich gesendet. Wir werden uns in Kürze bei Ihnen melden.",
+      "error": "Beim Senden Ihrer Nachricht ist ein Fehler aufgetreten. Bitte überprüfen Sie die Felder oder kontaktieren Sie uns direkt unter info@akmira-optronics.de.",
+      "required": "Dieses Feld ist Pflichtfeld",
+      "emailInvalid": "Bitte geben Sie eine gültige E-Mail-Adresse ein",
+      "consentRequired": "Sie müssen der Datenschutzerklärung zustimmen, um das Formular abzusenden"
+    },
+    "details": {
+      "title": "Direkter Kontakt",
+      "email": "E-Mail",
+      "phone": "Telefon",
+      "office": "Hauptsitz Potsdam"
+    }
+  }
+}

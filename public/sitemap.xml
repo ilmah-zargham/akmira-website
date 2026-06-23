@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <!-- English pages -->
+  <url>
+    <loc>https://akmira-optronics.de/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://akmira-optronics.de/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://akmira-optronics.de/de"/>
+  </url>
+  <url>
+    <loc>https://akmira-optronics.de/akuris</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://akmira-optronics.de/akuris"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://akmira-optronics.de/de/akuris"/>
+  </url>
+  <url>
+    <loc>https://akmira-optronics.de/technology</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://akmira-optronics.de/technology"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://akmira-optronics.de/de/technology"/>
+  </url>
+  <url>
+    <loc>https://akmira-optronics.de/company</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://akmira-optronics.de/company"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://akmira-optronics.de/de/company"/>
+  </url>
+  <url>
+    <loc>https://akmira-optronics.de/career</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://akmira-optronics.de/career"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://akmira-optronics.de/de/career"/>
+  </url>
+  <url>
+    <loc>https://akmira-optronics.de/contact</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://akmira-optronics.de/contact"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://akmira-optronics.de/de/contact"/>
+  </url>
+
+  <!-- German pages -->
+  <url>
+    <loc>https://akmira-optronics.de/de</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://akmira-optronics.de/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://akmira-optronics.de/de"/>
+  </url>
+  <url>
+    <loc>https://akmira-optronics.de/de/akuris</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://akmira-optronics.de/akuris"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://akmira-optronics.de/de/akuris"/>
+  </url>
+  <url>
+    <loc>https://akmira-optronics.de/de/technology</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://akmira-optronics.de/technology"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://akmira-optronics.de/de/technology"/>
+  </url>
+  <url>
+    <loc>https://akmira-optronics.de/de/company</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://akmira-optronics.de/company"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://akmira-optronics.de/de/company"/>
+  </url>
+  <url>
+    <loc>https://akmira-optronics.de/de/career</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://akmira-optronics.de/career"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://akmira-optronics.de/de/career"/>
+  </url>
+  <url>
+    <loc>https://akmira-optronics.de/de/contact</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://akmira-optronics.de/contact"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://akmira-optronics.de/de/contact"/>
+  </url>
+</urlset>

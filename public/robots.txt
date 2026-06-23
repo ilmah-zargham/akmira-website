@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://akmira-optronics.de/sitemap.xml
