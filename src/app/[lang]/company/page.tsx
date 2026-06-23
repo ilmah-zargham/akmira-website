@@ -12,6 +12,7 @@ import { getDictionary } from '../../dictionaries'
 import ScrollReveal from '@/components/ScrollReveal'
 import ScanLine from '@/components/ScanLine'
 import SectionHeader from '@/components/SectionHeader'
+import PlaceholderBox from '@/components/PlaceholderBox'
 
 export default async function CompanyPage({ params }: { params: Promise<{ lang: string }> }) {
   const { lang } = await params
@@ -88,12 +89,7 @@ export default async function CompanyPage({ params }: { params: Promise<{ lang: 
               <div className="bg-mist border border-line rounded-3xl p-6 md:p-8 space-y-6 hover:shadow-sm transition-shadow flex flex-col justify-between h-full">
                 <div className="space-y-6">
                   {/* Photo placeholder */}
-                  <div className="placeholder-box aspect-[3/4] w-48 rounded-xl mx-auto flex flex-col items-center justify-center p-4 border border-line bg-ink/5">
-                    <Users className="h-8 w-8 text-cyan-deep mb-2 opacity-50" />
-                    <span className="text-[10px] font-mono text-cyan-deep bg-cyan/5 border border-cyan/15 px-2 py-0.5 rounded">
-                      [PLACEHOLDER: Dr. Knüttel Portrait]
-                    </span>
-                  </div>
+                  <PlaceholderBox label="Dr. Knüttel Portrait" theme="light" aspectRatio="aspect-[3/4]" className="w-48 mx-auto" />
 
                   <div className="space-y-2 text-center">
                     <h3 className="font-heading text-xl font-bold text-ink">
@@ -116,12 +112,12 @@ export default async function CompanyPage({ params }: { params: Promise<{ lang: 
                     target="_blank" 
                     rel="noopener noreferrer" 
                     className="inline-flex items-center space-x-1.5 text-cyan-deep hover:text-ink font-semibold"
-                    aria-label="LinkedIn profile of Dr. Alexander Knüttel [PLACEHOLDER]"
+                    aria-label="LinkedIn profile of Dr. Alexander Knüttel (Demo)"
                   >
                     <svg className="h-4 w-4 fill-current" viewBox="0 0 24 24" aria-hidden="true">
                       <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.779-1.75-1.75s.784-1.75 1.75-1.75 1.75.779 1.75 1.75-.784 1.75-1.75 1.75zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
                     </svg>
-                    <span>LinkedIn [PLACEHOLDER]</span>
+                    <span>LinkedIn</span>
                   </a>
                 </div>
               </div>
@@ -132,12 +128,7 @@ export default async function CompanyPage({ params }: { params: Promise<{ lang: 
               <div className="bg-mist border border-line rounded-3xl p-6 md:p-8 space-y-6 hover:shadow-sm transition-shadow flex flex-col justify-between h-full">
                 <div className="space-y-6">
                   {/* Photo placeholder */}
-                  <div className="placeholder-box aspect-[3/4] w-48 rounded-xl mx-auto flex flex-col items-center justify-center p-4 border border-line bg-ink/5">
-                    <Users className="h-8 w-8 text-cyan-deep mb-2 opacity-50" />
-                    <span className="text-[10px] font-mono text-cyan-deep bg-cyan/5 border border-cyan/15 px-2 py-0.5 rounded">
-                      [PLACEHOLDER: Birte Filling Portrait]
-                    </span>
-                  </div>
+                  <PlaceholderBox label="Birte Filling Portrait" theme="light" aspectRatio="aspect-[3/4]" className="w-48 mx-auto" />
 
                   <div className="space-y-2 text-center">
                     <h3 className="font-heading text-xl font-bold text-ink">
@@ -160,12 +151,12 @@ export default async function CompanyPage({ params }: { params: Promise<{ lang: 
                     target="_blank" 
                     rel="noopener noreferrer" 
                     className="inline-flex items-center space-x-1.5 text-cyan-deep hover:text-ink font-semibold"
-                    aria-label="LinkedIn profile of Birte Filling [PLACEHOLDER]"
+                    aria-label="LinkedIn profile of Birte Filling (Demo)"
                   >
                     <svg className="h-4 w-4 fill-current" viewBox="0 0 24 24" aria-hidden="true">
                       <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.779-1.75-1.75s.784-1.75 1.75-1.75 1.75.779 1.75 1.75-.784 1.75-1.75 1.75zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
                     </svg>
-                    <span>LinkedIn [PLACEHOLDER]</span>
+                    <span>LinkedIn</span>
                   </a>
                 </div>
               </div>
@@ -210,15 +201,7 @@ export default async function CompanyPage({ params }: { params: Promise<{ lang: 
           {/* Right Team photo grid placeholder */}
           <div className="lg:col-span-6">
             <ScrollReveal delay={0.2}>
-              <div className="placeholder-box w-full aspect-video rounded-2xl border border-line bg-ink/5 p-6 flex flex-col justify-center items-center text-center">
-                <Users className="h-10 w-10 text-cyan-deep mb-3 opacity-60" />
-                <span className="text-xs font-mono text-cyan-deep bg-cyan/5 border border-cyan/15 px-3 py-1 rounded-md mb-2">
-                  [PLACEHOLDER: Team photo grid]
-                </span>
-                <p className="text-[10px] text-slate-400 max-w-xs leading-normal">
-                  Factual rendering of active engineers, physicists, and operations staff in Potsdam office.
-                </p>
-              </div>
+              <PlaceholderBox label="Potsdam Team Photo Grid" theme="light" aspectRatio="aspect-video" />
             </ScrollReveal>
           </div>
 
@@ -260,11 +243,9 @@ export default async function CompanyPage({ params }: { params: Promise<{ lang: 
             {/* Compliance logo strip placeholder */}
             <ScrollReveal delay={0.25}>
               <div className="bg-ink-soft border border-white/5 p-6 md:p-8 rounded-2xl h-full flex flex-col justify-center items-center text-center space-y-4">
-                <span className="text-xs font-mono text-cyan bg-cyan/5 border border-cyan/15 px-3 py-1 rounded-md">
-                  [PLACEHOLDER: Cofinancing Logos]
-                </span>
+                <span className="text-xs font-semibold text-slate-200">Compliance Documentation</span>
                 <p className="text-[10px] text-slate-400 max-w-xs leading-normal">
-                  Vector logotypes for European Union (EFRE), State of Brandenburg, and BMBF support guidelines.
+                  European Union (EFRE), State of Brandenburg, and BMBF funding guidelines.
                 </p>
                 <div className="flex space-x-4 pt-2">
                   <div className="h-10 w-24 bg-white/5 border border-white/10 rounded flex items-center justify-center text-[8px] text-slate-400 uppercase">EU EFRE</div>

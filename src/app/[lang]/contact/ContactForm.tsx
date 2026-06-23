@@ -63,31 +63,17 @@ export default function ContactForm({ dict }: ContactFormProps) {
 
     setStatus('submitting')
 
-    // Simulate API Submission Endpoint
-    try {
-      // Wire submission to PLACEHOLDER endpoint
-      const response = await fetch('/api/contact-placeholder', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(form),
+    setTimeout(() => {
+      setStatus('success')
+      setForm({
+        name: '',
+        email: '',
+        org: '',
+        role: '',
+        message: '',
+        consent: false,
       })
-
-      // Simulate success since api is placeholder
-      setTimeout(() => {
-        setStatus('success')
-        setForm({
-          name: '',
-          email: '',
-          org: '',
-          role: '',
-          message: '',
-          consent: false,
-        })
-      }, 1000)
-
-    } catch (err) {
-      setStatus('error')
-    }
+    }, 800)
   }
 
   return (
@@ -98,10 +84,10 @@ export default function ContactForm({ dict }: ContactFormProps) {
 
       {status === 'success' && (
         <div 
-          className="mb-6 p-4 bg-emerald-50 border border-emerald-200 text-emerald-800 rounded-xl text-sm leading-relaxed"
+          className="mb-6 p-4 bg-cyan/10 border border-cyan/30 text-cyan-deep rounded-xl text-sm leading-relaxed"
           role="alert"
         >
-          {dict.contact.form.success}
+          <strong>Concept Project Demo:</strong> Your message was not sent. Submissions are disabled for this portfolio concept site.
         </div>
       )}
 
@@ -272,10 +258,7 @@ export default function ContactForm({ dict }: ContactFormProps) {
         {/* Fallback info */}
         <div className="text-center pt-2">
           <span className="text-[10px] text-slate-400">
-            Fallback: Send directly to{' '}
-            <a href="mailto:info@akmira-optronics.de" className="text-cyan-deep font-semibold underline">
-              info@akmira-optronics.de
-            </a>
+            Fallback: hello@example.com
           </span>
         </div>
       </form>

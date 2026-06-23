@@ -18,6 +18,7 @@ import { getDictionary } from '../../dictionaries'
 import ScrollReveal from '@/components/ScrollReveal'
 import ScanLine from '@/components/ScanLine'
 import SectionHeader from '@/components/SectionHeader'
+import PlaceholderBox from '@/components/PlaceholderBox'
 
 export default async function TechnologyPage({ params }: { params: Promise<{ lang: string }> }) {
   const { lang } = await params
@@ -206,8 +207,8 @@ export default async function TechnologyPage({ params }: { params: Promise<{ lan
                       {dict.technology.roadmap.gen3.desc}
                     </p>
                     <div className="pt-2">
-                      <span className="text-[10px] font-mono text-cyan bg-cyan/5 border border-cyan/15 px-2 py-0.5 rounded">
-                        [PLACEHOLDER: Golden Eye Render]
+                      <span className="text-[9px] font-mono text-slate-400 bg-white/5 border border-white/10 px-2 py-0.5 rounded uppercase">
+                        Render Coming Soon
                       </span>
                     </div>
                   </div>
@@ -254,8 +255,8 @@ export default async function TechnologyPage({ params }: { params: Promise<{ lan
                     </p>
                   </div>
                   <div className="pt-6">
-                    <span className="text-[9px] font-mono text-cyan-deep bg-cyan/5 border border-cyan/15 px-2 py-0.5 rounded">
-                      [PLACEHOLDER: Camera concept render]
+                    <span className="text-[9px] font-mono text-slate-500 bg-slate-100 border border-slate-200 px-2 py-0.5 rounded uppercase">
+                      Render Coming Soon
                     </span>
                   </div>
                 </div>

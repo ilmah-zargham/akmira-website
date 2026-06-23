@@ -18,6 +18,7 @@ import { getDictionary } from '../dictionaries'
 import ScrollReveal from '@/components/ScrollReveal'
 import ScanLine from '@/components/ScanLine'
 import SectionHeader from '@/components/SectionHeader'
+import PlaceholderBox from '@/components/PlaceholderBox'
 
 export default async function HomePage({ params }: { params: Promise<{ lang: string }> }) {
   const { lang } = await params
@@ -91,11 +92,9 @@ export default async function HomePage({ params }: { params: Promise<{ lang: str
                   </div>
                 </div>
 
-                <span className="text-xs font-mono text-cyan/90 bg-cyan/5 border border-cyan/15 px-3 py-1 rounded-md mb-2">
-                  [PLACEHOLDER: Hero loop video (10-15s)]
-                </span>
-                <span className="text-[10px] text-slate-400 text-center max-w-xs leading-normal">
-                  Ear-canal scan transition to 3D model. autoplays, muted, loops.
+                <span className="text-xs font-semibold text-slate-200 tracking-wide mb-1 relative z-10">Hero loop video coming soon</span>
+                <span className="text-[9px] font-mono text-cyan/90 bg-cyan/5 border border-cyan/15 px-2 py-0.5 rounded-md relative z-10 uppercase">
+                  Ear-canal scan demonstration
                 </span>
               </div>
             </ScrollReveal>
@@ -196,14 +195,7 @@ export default async function HomePage({ params }: { params: Promise<{ lang: str
           {/* Right Video demo placeholder */}
           <div className="lg:col-span-6">
             <ScrollReveal delay={0.2}>
-              <div className="placeholder-box w-full aspect-video rounded-2xl flex flex-col items-center justify-center p-6 border border-white/10 shadow-2xl bg-gradient-to-tr from-ink to-ink-soft">
-                <span className="text-xs font-mono text-cyan bg-cyan/5 border border-cyan/15 px-3 py-1 rounded-md mb-2">
-                  [PLACEHOLDER: AKuris live scanning demo video]
-                </span>
-                <span className="text-[10px] text-slate-400 text-center max-w-xs leading-normal">
-                  Silent high-fidelity scan flow showing optical sweep and digital reconstruction.
-                </span>
-              </div>
+              <PlaceholderBox label="AKuris live scanning demo video" theme="dark" aspectRatio="aspect-video" />
             </ScrollReveal>
           </div>
         </div>
@@ -385,11 +377,9 @@ export default async function HomePage({ params }: { params: Promise<{ lang: str
                     <Eye className="h-5 w-5 text-cyan animate-pulse" />
                   </div>
                 </div>
-                <span className="text-xs font-mono text-cyan bg-cyan/5 border border-cyan/15 px-3 py-1 rounded-md mb-2">
-                  [PLACEHOLDER: Platform zoom & endoscopy renders]
-                </span>
-                <span className="text-[10px] text-slate-400 text-center max-w-xs leading-normal">
-                  Renders showcasing sensor shrinking to a fraction of a 1-cent coin.
+                <span className="text-xs font-semibold text-slate-200 tracking-wide mb-1 relative z-10">Sensor visual coming soon</span>
+                <span className="text-[9px] font-mono text-cyan bg-cyan/5 border border-cyan/15 px-2 py-0.5 rounded relative z-10 uppercase">
+                  Platform zoom & endoscopy renders
                 </span>
               </div>
             </ScrollReveal>
@@ -443,7 +433,7 @@ export default async function HomePage({ params }: { params: Promise<{ lang: str
             <div className="flex flex-wrap justify-center items-center gap-6 max-w-3xl mx-auto">
               {['EU co-funding', 'BMBF support', 'State of Brandenburg', 'Berlin-Brandenburg Award'].map((title, idx) => (
                 <div key={idx} className="bg-mist border border-line rounded-xl px-6 py-3 text-center min-w-[140px] flex items-center justify-center">
-                  <span className="text-xs font-semibold text-slate/70">{title} [PLACEHOLDER]</span>
+                  <span className="text-xs font-semibold text-slate/70">{title}</span>
                 </div>
               ))}
             </div>
@@ -498,7 +488,7 @@ export default async function HomePage({ params }: { params: Promise<{ lang: str
                   rel="noopener noreferrer" 
                   className="bg-cyan hover:bg-cyan-deep text-ink hover:text-white font-sans text-sm font-semibold px-6 py-4 rounded-xl text-center inline-block transition-all duration-200 focus-ring shadow-[0_4px_12px_rgba(25,201,216,0.15)]"
                 >
-                  {dict.common.cta.planVisit} [PLACEHOLDER URL] →
+                  {dict.common.cta.planVisit} →
                 </a>
               </ScrollReveal>
             </div>

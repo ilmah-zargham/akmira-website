@@ -16,8 +16,8 @@
       "seeAction": "See AKuris in action",
       "learnMore": "Learn more",
       "submit": "Send message",
-      "downloadSpec": "Download spec sheet [PDF]",
-      "findAudiologist": "Find certified audiologist"
+      "downloadSpec": "Download spec sheet [PDF] (Demo)",
+      "findAudiologist": "Find certified audiologist (Demo)"
     },
     "labels": {
       "award": "1st place · Innovation Award Berlin Brandenburg 2024",
@@ -30,7 +30,7 @@
     "footer": {
       "mission": "Opening a new technological door with digital optical holography.",
       "contact": "Contact",
-      "addressNotice": "Please note: from 1 March 2026 our address is Am Luftschiffhafen 1, 14471 Potsdam.",
+      "addressNotice": "Please note: this website is a concept redesign portfolio project.",
       "legal": "Legal",
       "privacy": "Datenschutz",
       "imprint": "Impressum",
@@ -116,7 +116,7 @@
       "title": "AKuris — the first non-contact 3D ear canal scanner.",
       "subhead": "The next generation of personalised hearing systems."
     },
-    "problemText": "Traditional audiologist molds require filling the patient's ear with cold, heavy silicone paste, which is often painful, prone to physical distortion, and requires shipping physical impressions to manufacturers. This adds delays, environmental waste, and costly remakes. AKuris eliminates this manual bottleneck.",
+    "problemText": "Traditional audiologist molds require filling the patient's ear with cold, heavy silicone paste, which can be uncomfortable, is prone to physical distortion, and requires shipping physical impressions to manufacturers. This adds delays, environmental waste, and costly remakes. AKuris eliminates this manual bottleneck.",
     "steps": {
       "eyebrow": "How it works",
       "title": "Holographic scanning in 3 steps",
@@ -303,7 +303,7 @@
       "message": "Message",
       "consent": "I consent to having this website store my submitted info so they can respond to my inquiry.",
       "success": "Thank you! Your message has been sent successfully. We will get back to you shortly.",
-      "error": "There was an error sending your message. Please check the fields and try again or email us directly at info@akmira-optronics.de.",
+      "error": "There was an error sending your message. Please check the fields and try again or email us at hello@example.com.",
       "required": "This field is required",
       "emailInvalid": "Please enter a valid email address",
       "consentRequired": "You must accept the privacy policy to submit the form"

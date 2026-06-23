@@ -12,6 +12,7 @@ import ScrollReveal from '@/components/ScrollReveal'
 import ScanLine from '@/components/ScanLine'
 import SectionHeader from '@/components/SectionHeader'
 import ContactForm from './ContactForm'
+import PlaceholderBox from '@/components/PlaceholderBox'
 
 export default async function ContactPage({ params }: { params: Promise<{ lang: string }> }) {
   const { lang } = await params
@@ -61,31 +62,25 @@ export default async function ContactPage({ params }: { params: Promise<{ lang: 
             {/* Telephone & Email card */}
             <ScrollReveal delay={0.2}>
               <div className="bg-white border border-line rounded-2xl p-6 space-y-4 shadow-sm">
-                <a 
-                  href="mailto:info@akmira-optronics.de" 
-                  className="flex items-center space-x-4 p-2 hover:bg-mist/50 rounded-xl transition-colors focus-ring"
-                >
+                <div className="flex items-center space-x-4 p-2 rounded-xl">
                   <div className="h-10 w-10 rounded-lg bg-cyan/10 border border-cyan/20 flex items-center justify-center text-cyan-deep flex-shrink-0">
                     <Mail className="h-5 w-5" />
                   </div>
                   <div>
                     <span className="block text-[10px] font-mono font-bold uppercase text-slate-400">Email</span>
-                    <span className="text-sm font-bold text-ink">info@akmira-optronics.de</span>
+                    <span className="text-sm font-bold text-ink">hello@example.com</span>
                   </div>
-                </a>
+                </div>
 
-                <a 
-                  href="tel:+490331982231-0" 
-                  className="flex items-center space-x-4 p-2 hover:bg-mist/50 rounded-xl transition-colors focus-ring"
-                >
+                <div className="flex items-center space-x-4 p-2 rounded-xl">
                   <div className="h-10 w-10 rounded-lg bg-cyan/10 border border-cyan/20 flex items-center justify-center text-cyan-deep flex-shrink-0">
                     <Phone className="h-5 w-5" />
                   </div>
                   <div>
                     <span className="block text-[10px] font-mono font-bold uppercase text-slate-400">Telephone</span>
-                    <span className="text-sm font-bold text-ink">+49 (0)331 982231-0</span>
+                    <span className="text-sm font-bold text-ink">+49 (0)000 000000</span>
                   </div>
-                </a>
+                </div>
               </div>
             </ScrollReveal>
 
@@ -99,21 +94,11 @@ export default async function ContactPage({ params }: { params: Promise<{ lang: 
                   <div className="space-y-1">
                     <span className="block text-[10px] font-mono font-bold uppercase text-slate-400">Office Address</span>
                     <p className="text-sm text-ink leading-relaxed font-semibold">
-                      AKmira Optronics GmbH<br />
-                      Am Luftschiffhafen 1<br />
+                      AKmira Optronics GmbH (Concept)<br />
+                      Example Street 1<br />
                       14471 Potsdam, Germany
                     </p>
                   </div>
-                </div>
-
-                <div className="p-4 rounded-xl bg-cyan/5 border border-cyan/15 text-xs text-slate space-y-2">
-                  <div className="flex items-center space-x-1.5 text-cyan-deep font-bold uppercase tracking-wider">
-                    <Info className="h-4 w-4" />
-                    <span>Relocation Notice</span>
-                  </div>
-                  <p className="leading-relaxed">
-                    {dict.common.footer.addressNotice}
-                  </p>
                 </div>
               </div>
             </ScrollReveal>
@@ -149,17 +134,7 @@ export default async function ContactPage({ params }: { params: Promise<{ lang: 
 
           {/* Map box placeholder */}
           <ScrollReveal delay={0.25}>
-            <div className="placeholder-box w-full h-[400px] rounded-3xl border border-line bg-ink/5 flex flex-col justify-center items-center text-center p-6 overflow-hidden">
-              <div className="h-12 w-12 rounded-full border border-cyan-deep/30 flex items-center justify-center mb-3 bg-white shadow-sm">
-                <Compass className="h-6 w-6 text-cyan-deep animate-pulse" />
-              </div>
-              <span className="text-xs font-mono text-cyan-deep bg-cyan/5 border border-cyan/15 px-3 py-1 rounded-md mb-2">
-                [PLACEHOLDER: Embedded Office Map]
-              </span>
-              <p className="text-[10px] text-slate-400 max-w-xs leading-normal">
-                Google Map overlay centering Potsdam, Am Luftschiffhafen 1 (effective March 1, 2026).
-              </p>
-            </div>
+            <PlaceholderBox label="Office Location Map" theme="light" aspectRatio="aspect-[21/9]" className="h-[400px]" />
           </ScrollReveal>
         </div>
       </section>

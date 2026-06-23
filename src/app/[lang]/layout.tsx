@@ -49,7 +49,7 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
       siteName: 'AKmira Optronics',
       images: [
         {
-          url: '/images/og-share-placeholder.jpg', // Marked placeholder in PLACEHOLDERS.md
+          url: '/images/og-share-placeholder.png',
           width: 1200,
           height: 630,
           alt: 'AKmira Optronics 3D Ear Scanner',

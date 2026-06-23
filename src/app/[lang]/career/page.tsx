@@ -112,22 +112,19 @@ export default async function CareerPage({ params }: { params: Promise<{ lang: s
                 title: dict.career.jobs.student.title,
                 dept: dict.career.jobs.student.dept,
                 loc: dict.career.jobs.student.location,
-                desc: dict.career.jobs.student.desc,
-                placeholder: "[PLACEHOLDER: Student position details]"
+                desc: dict.career.jobs.student.desc
               },
               {
                 title: dict.career.jobs.optical.title,
                 dept: dict.career.jobs.optical.dept,
                 loc: dict.career.jobs.optical.location,
-                desc: dict.career.jobs.optical.desc,
-                placeholder: "[PLACEHOLDER: Optical systems position details]"
+                desc: dict.career.jobs.optical.desc
               },
               {
                 title: dict.career.jobs.embedded.title,
                 dept: dict.career.jobs.embedded.dept,
                 loc: dict.career.jobs.embedded.location,
-                desc: dict.career.jobs.embedded.desc,
-                placeholder: "[PLACEHOLDER: Embedded developer position details]"
+                desc: dict.career.jobs.embedded.desc
               }
             ].map((job, i) => (
               <ScrollReveal key={i} delay={0.1 + i * 0.1}>
@@ -147,9 +144,6 @@ export default async function CareerPage({ params }: { params: Promise<{ lang: s
                     <p className="text-slate text-sm leading-relaxed">
                       {job.desc}
                     </p>
-                    <div className="text-[10px] text-slate-400 font-mono italic">
-                      {job.placeholder}
-                    </div>
                   </div>
                   <div className="flex-shrink-0">
                     <Link 
@@ -189,7 +183,7 @@ export default async function CareerPage({ params }: { params: Promise<{ lang: s
               className="bg-cyan hover:bg-cyan-deep text-ink hover:text-white font-sans text-sm font-semibold px-8 py-4 rounded-xl transition-all duration-200 focus-ring shadow-lg inline-flex items-center space-x-2"
             >
               <Send className="h-4 w-4" />
-              <span>Submit spontaneous application [PLACEHOLDER]</span>
+              <span>Submit spontaneous application</span>
             </Link>
           </ScrollReveal>
         </div>

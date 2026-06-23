@@ -16,6 +16,8 @@ import ScrollReveal from '@/components/ScrollReveal'
 import ScanLine from '@/components/ScanLine'
 import SectionHeader from '@/components/SectionHeader'
 import RotatingEarModel from '@/components/RotatingEarModel'
+import PlaceholderBox from '@/components/PlaceholderBox'
+import AlertButton from '@/components/AlertButton'
 
 export default async function AkurisPage({ params }: { params: Promise<{ lang: string }> }) {
   const { lang } = await params
@@ -43,7 +45,7 @@ export default async function AkurisPage({ params }: { params: Promise<{ lang: s
               {/* Product Logo Lockup Placeholder */}
               <div className="inline-flex items-center space-x-2.5 px-3 py-1.5 rounded-full border border-cyan/20 bg-cyan/5 font-heading text-xs font-semibold text-cyan tracking-wider uppercase">
                 <span className="h-2 w-2 rounded-full bg-cyan animate-pulse" />
-                <span>AKuris Product World [PLACEHOLDER LOGO/LOCKUP]</span>
+                <span>AKuris Product World</span>
               </div>
             </ScrollReveal>
 
@@ -78,17 +80,7 @@ export default async function AkurisPage({ params }: { params: Promise<{ lang: s
           {/* Right Product Render Placeholder */}
           <div className="lg:col-span-5">
             <ScrollReveal delay={0.3}>
-              <div className="placeholder-box w-full aspect-[4/3] rounded-2xl flex flex-col items-center justify-center p-6 border border-white/10 shadow-2xl bg-gradient-to-br from-ink-soft to-ink">
-                <div className="h-16 w-16 rounded-full border border-cyan/30 flex items-center justify-center mb-4 bg-ink/55">
-                  <Settings className="h-8 w-8 text-cyan animate-spin-slow" />
-                </div>
-                <span className="text-xs font-mono text-cyan bg-cyan/5 border border-cyan/15 px-3 py-1 rounded-md mb-2">
-                  [PLACEHOLDER: AKuris scanner product render]
-                </span>
-                <span className="text-[10px] text-slate-400 text-center max-w-xs leading-normal">
-                  High-fidelity industrial mockup of the handheld 3D scanning device.
-                </span>
-              </div>
+              <PlaceholderBox label="AKuris scanner product render" theme="dark" aspectRatio="aspect-[4/3]" />
             </ScrollReveal>
           </div>
         </div>
@@ -120,7 +112,7 @@ export default async function AkurisPage({ params }: { params: Promise<{ lang: s
                 <div className="p-4 rounded-xl bg-orange-50 border border-orange-200 text-xs text-orange-800 flex items-start space-x-3">
                   <HelpCircle className="h-5 w-5 text-orange-600 flex-shrink-0 mt-0.5" />
                   <div>
-                    <span className="font-bold">Important note for audiologists:</span> conventional manual molding presents clinical risks (e.g. pressure on the eardrum) and leads to an average remake rate of 8-12% due to shrinkage and distortion.
+                    <span className="font-bold">Important note for audiologists:</span> Conventional molds can lead to costly remakes due to shrinkage and distortion. The conventional process can be uncomfortable and is prone to physical distortion.
                   </div>
                 </div>
               </ScrollReveal>
@@ -144,6 +136,9 @@ export default async function AkurisPage({ params }: { params: Promise<{ lang: s
                 </ScrollReveal>
               ))}
             </div>
+          </div>
+          <div className="text-[11px] text-slate-500 italic mt-8 text-center md:text-left">
+            Note: figures and clinical details on this page are illustrative and for concept-design purposes only.
           </div>
         </div>
       </section>
@@ -214,15 +209,7 @@ export default async function AkurisPage({ params }: { params: Promise<{ lang: s
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
             {/* Live demo scan video placeholder */}
             <ScrollReveal delay={0.2} className="lg:col-span-6 flex">
-              <div className="placeholder-box w-full rounded-2xl border border-white/10 p-6 flex flex-col justify-center items-center text-center relative overflow-hidden bg-ink/60 shadow-2xl min-h-[350px]">
-                <div className="absolute inset-0 bg-gradient-to-t from-ink to-transparent" />
-                <span className="text-xs font-mono text-cyan bg-cyan/5 border border-cyan/15 px-3 py-1 rounded-md mb-2 relative z-10">
-                  [PLACEHOLDER: AKuris real-time scan video]
-                </span>
-                <p className="text-[10px] text-slate-400 max-w-xs leading-normal relative z-10">
-                  10-second high definition silent video: probe scanning physical ear model, displaying immediate points rendering.
-                </p>
-              </div>
+              <PlaceholderBox label="AKuris real-time scan video" theme="dark" className="min-h-[350px]" />
             </ScrollReveal>
 
             {/* Interactive canvas rotating ear-canal visualizer */}
@@ -363,10 +350,8 @@ export default async function AkurisPage({ params }: { params: Promise<{ lang: s
 
             {/* Future fair placeholder */}
             <ScrollReveal delay={0.3} className="lg:col-span-5">
-              <div className="placeholder-box rounded-2xl p-6 h-full flex flex-col justify-center items-center text-center bg-ink/40 border border-white/5 min-h-[220px]">
-                <span className="text-xs font-mono text-cyan bg-cyan/5 border border-cyan/15 px-3 py-1 rounded-md mb-2">
-                  [PLACEHOLDER: Future trade fairs]
-                </span>
+              <div className="rounded-2xl p-6 h-full flex flex-col justify-center items-center text-center bg-ink/40 border border-white/5 min-h-[220px]">
+                <span className="text-xs font-semibold text-slate-300 mb-2">Upcoming Presentations</span>
                 <p className="text-[10px] text-slate-400 max-w-xs leading-normal">
                   {dict.akuris.futureFairs.placeholderText}
                 </p>
@@ -428,15 +413,15 @@ export default async function AkurisPage({ params }: { params: Promise<{ lang: s
                   </p>
                 </div>
                 <div className="space-y-2">
-                  <span className="text-[9px] font-mono text-cyan bg-cyan/5 border border-cyan/15 px-2 py-0.5 rounded block w-max mx-auto">
-                    [PLACEHOLDER: Spec PDF]
+                  <span className="text-[9px] font-mono text-slate-400 bg-white/5 border border-white/10 px-2 py-0.5 rounded block w-max mx-auto">
+                    PDF Document
                   </span>
-                  <Link 
-                    href={getLocalizedHref('/contact')} 
-                    className="border border-white/15 hover:border-white/30 bg-white/5 hover:bg-white/10 text-white font-sans text-xs font-bold py-3 rounded-xl transition-all duration-200 focus-ring block"
+                  <AlertButton 
+                    message="This is a concept project. Spec sheet download is not available."
+                    className="w-full border border-white/15 hover:border-white/30 bg-white/5 hover:bg-white/10 text-white font-sans text-xs font-bold py-3 rounded-xl transition-all duration-200 focus-ring block text-center"
                   >
                     {dict.common.cta.downloadSpec}
-                  </Link>
+                  </AlertButton>
                 </div>
               </div>
             </ScrollReveal>
@@ -451,15 +436,15 @@ export default async function AkurisPage({ params }: { params: Promise<{ lang: s
                   </p>
                 </div>
                 <div className="space-y-2">
-                  <span className="text-[9px] font-mono text-cyan bg-cyan/5 border border-cyan/15 px-2 py-0.5 rounded block w-max mx-auto">
-                    [PLACEHOLDER: Clinic map]
+                  <span className="text-[9px] font-mono text-slate-400 bg-white/5 border border-white/10 px-2 py-0.5 rounded block w-max mx-auto">
+                    Interactive Map
                   </span>
-                  <Link 
-                    href={getLocalizedHref('/contact')} 
-                    className="border border-white/15 hover:border-white/30 bg-white/5 hover:bg-white/10 text-white font-sans text-xs font-bold py-3 rounded-xl transition-all duration-200 focus-ring block"
+                  <AlertButton 
+                    message="This is a concept project. Certified audiologist map is not available."
+                    className="w-full border border-white/15 hover:border-white/30 bg-white/5 hover:bg-white/10 text-white font-sans text-xs font-bold py-3 rounded-xl transition-all duration-200 focus-ring block text-center"
                   >
                     {dict.common.cta.findAudiologist}
-                  </Link>
+                  </AlertButton>
                 </div>
               </div>
             </ScrollReveal>

@@ -24,19 +24,16 @@ export default function Footer({ lang, dict }: FooterProps) {
             href={getLocalizedHref('/')} 
             className="flex items-center space-x-2 font-heading font-bold text-xl text-white tracking-tight focus-ring rounded-lg w-max"
           >
-            <span className="h-7 w-7 rounded-lg holographic-gradient flex items-center justify-between p-1.5">
+            <span className="h-7 w-7 rounded-lg holographic-gradient flex items-center justify-between p-1.5" aria-hidden="true">
               <span className="h-full w-full bg-ink rounded-[4px] flex items-center justify-center font-heading text-[10px] text-cyan">AK</span>
             </span>
             <span>
-              AKmira<span className="text-cyan text-sm font-light font-sans ml-1">Optronics</span>
+              mira<span className="text-cyan text-sm font-light font-sans ml-1">Optronics</span>
             </span>
           </Link>
           <p className="text-slate-400 text-sm max-w-xs leading-relaxed">
             {dict.common.footer.mission}
           </p>
-          <div className="text-xs text-slate-500 font-mono">
-            ID: DE34928372 [PLACEHOLDER]
-          </div>
         </div>
 
         {/* Navigation Column */}
@@ -80,21 +77,14 @@ export default function Footer({ lang, dict }: FooterProps) {
           </h4>
           <address className="not-italic text-sm text-slate-400 space-y-2.5">
             <p>
-              AKmira Optronics GmbH<br />
-              Am Luftschiffhafen 1<br />
+              AKmira Optronics GmbH (Concept)<br />
+              Example Street 1<br />
               14471 Potsdam, Germany
             </p>
-            <p className="text-xs text-slate-500 border-l border-cyan/40 pl-3 leading-snug">
-              {dict.common.footer.addressNotice}
-            </p>
             <p className="pt-2">
-              <a href="mailto:info@akmira-optronics.de" className="hover:text-white transition-colors focus-ring rounded text-cyan">
-                info@akmira-optronics.de
-              </a>
+              <span className="text-slate-400">hello@example.com</span>
               <br />
-              <a href="tel:+490331982231-0" className="hover:text-white transition-colors focus-ring rounded">
-                +49 (0)331 982231-0
-              </a>
+              <span className="text-slate-400">+49 (0)000 000000</span>
             </p>
           </address>
         </div>
@@ -131,17 +121,14 @@ export default function Footer({ lang, dict }: FooterProps) {
       </div>
 
       {/* Footer Bottom */}
-      <div className="max-w-[1200px] mx-auto px-6 mt-12 pt-8 border-t border-white/5 flex flex-col md:flex-row items-center justify-between text-xs text-slate-500 gap-4">
-        <div>
-          {dict.common.footer.copyright}
-        </div>
-        <div className="flex space-x-6">
-          <Link href={getLocalizedHref('/contact')} className="hover:text-white transition-colors focus-ring rounded">
-            {dict.common.footer.privacy}
-          </Link>
-          <Link href={getLocalizedHref('/contact')} className="hover:text-white transition-colors focus-ring rounded">
-            {dict.common.footer.imprint}
-          </Link>
+      <div className="max-w-[1200px] mx-auto px-6 mt-12 pt-8 border-t border-white/5 space-y-4">
+        <p className="text-[11px] text-slate-500 leading-relaxed text-center md:text-left">
+          This is an independent, self-initiated concept redesign created as a personal UX/design portfolio project. It is not affiliated with, endorsed by, or the official website of AKmira Optronics GmbH. All company references are used for illustrative design purposes only.
+        </p>
+        <div className="flex flex-col md:flex-row items-center justify-between text-xs text-slate-500 gap-4">
+          <div>
+            {dict.common.footer.copyright}
+          </div>
         </div>
       </div>
     </footer>

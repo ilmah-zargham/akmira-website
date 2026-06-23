@@ -50,17 +50,22 @@ export default function Header({ lang, dict }: HeaderProps) {
 
   // Get path for the other language
   const getAlternateLangPath = () => {
+    let cleanPath = pathname
+    if (pathname.startsWith('/en/')) {
+      cleanPath = pathname.substring(3)
+    } else if (pathname === '/en') {
+      cleanPath = '/'
+    } else if (pathname.startsWith('/de/')) {
+      cleanPath = pathname.substring(3)
+    } else if (pathname === '/de') {
+      cleanPath = '/'
+    }
+
     if (lang === 'en') {
-      // Switch to German: prefix current path with /de
-      if (pathname === '/') return '/de'
-      // If it already has /de (which shouldn't happen under lang === 'en'), just return it
-      if (pathname.startsWith('/de')) return pathname
-      return `/de${pathname}`
+      if (cleanPath === '/') return '/de'
+      return `/de${cleanPath}`
     } else {
-      // Switch to English: strip /de prefix
-      if (pathname === '/de') return '/'
-      if (pathname.startsWith('/de/')) return pathname.substring(3)
-      return pathname
+      return cleanPath
     }
   }
 
@@ -84,11 +89,11 @@ export default function Header({ lang, dict }: HeaderProps) {
             className="flex items-center space-x-2 font-heading font-bold text-xl text-white tracking-tight focus-ring rounded-lg"
             aria-label="AKmira Optronics Home"
           >
-            <span className="h-7 w-7 rounded-lg holographic-gradient flex items-center justify-between p-1.5 shadow-[0_0_10px_rgba(25,201,216,0.3)]">
+            <span className="h-7 w-7 rounded-lg holographic-gradient flex items-center justify-between p-1.5 shadow-[0_0_10px_rgba(25,201,216,0.3)]" aria-hidden="true">
               <span className="h-full w-full bg-ink rounded-[4px] flex items-center justify-center font-heading text-[10px] text-cyan">AK</span>
             </span>
             <span>
-              AKmira<span className="text-cyan text-sm font-light font-sans ml-1">Optronics</span>
+              mira<span className="text-cyan text-sm font-light font-sans ml-1">Optronics</span>
             </span>
           </Link>
 

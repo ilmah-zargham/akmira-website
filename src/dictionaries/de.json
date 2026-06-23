@@ -16,8 +16,8 @@
       "seeAction": "AKuris in Aktion sehen",
       "learnMore": "Mehr erfahren",
       "submit": "Nachricht senden",
-      "downloadSpec": "Datenblatt herunterladen [PDF]",
-      "findAudiologist": "Zertifizierten Akustiker finden"
+      "downloadSpec": "Datenblatt herunterladen [PDF] (Demo)",
+      "findAudiologist": "Zertifizierten Akustiker finden (Demo)"
     },
     "labels": {
       "award": "1. Platz · Innovationspreis Berlin Brandenburg 2024",
@@ -30,7 +30,7 @@
     "footer": {
       "mission": "Mit digitaler optischer Holografie ein neues technologisches Fenster öffnen.",
       "contact": "Kontakt",
-      "addressNotice": "Bitte beachten Sie: Ab dem 1. März 2026 lautet unsere Adresse: Am Luftschiffhafen 1, 14471 Potsdam.",
+      "addressNotice": "Bitte beachten Sie: Diese Website ist ein Konzept-Redesign-Projekt für ein Portfolio.",
       "legal": "Rechtliches",
       "privacy": "Datenschutz",
       "imprint": "Impressum",
@@ -116,7 +116,7 @@
       "title": "AKuris – der erste berührungslose 3D-Gehörgangsscanner.",
       "subhead": "Die nächste Generation personalisierter Hörsysteme."
     },
-    "problemText": "[DE PLACEHOLDER] Traditional audiologist molds require filling the patient's ear with cold, heavy silicone paste, which is often painful, prone to physical distortion, and requires shipping physical impressions to manufacturers. This adds delays, environmental waste, and costly remakes. AKuris eliminates this manual bottleneck.",
+    "problemText": "Traditionelle Abdrücke von Hörakustikern erfordern das Befüllen des Ohrs des Patienten mit kalter, schwerer Silikonpaste, was unangenehm sein kann, anfällig für physische Verformungen ist und den Versand physischer Abdrücke an die Hersteller erfordert. Dies führt zu Verzögerungen, Müllbelastung und teuren Neuanfertigungen. AKuris beseitigt diesen manuellen Engpass.",
     "steps": {
       "eyebrow": "Wie es funktioniert",
       "title": "Holografisches Scannen in 3 Schritten",
@@ -303,7 +303,7 @@
       "message": "Nachricht",
       "consent": "Ich willige ein, dass diese Website meine Daten speichert, um meine Anfrage zu beantworten.",
       "success": "Vielen Dank! Ihre Nachricht wurde erfolgreich gesendet. Wir werden uns in Kürze bei Ihnen melden.",
-      "error": "Beim Senden Ihrer Nachricht ist ein Fehler aufgetreten. Bitte überprüfen Sie die Felder oder kontaktieren Sie uns direkt unter info@akmira-optronics.de.",
+      "error": "Beim Senden Ihrer Nachricht ist ein Fehler aufgetreten. Bitte überprüfen Sie die Felder oder kontaktieren Sie uns direkt unter hello@example.com.",
       "required": "Dieses Feld ist Pflichtfeld",
       "emailInvalid": "Bitte geben Sie eine gültige E-Mail-Adresse ein",
       "consentRequired": "Sie müssen der Datenschutzerklärung zustimmen, um das Formular abzusenden"
