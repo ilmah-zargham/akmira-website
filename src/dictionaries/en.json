@@ -41,7 +41,7 @@
     "hero": {
       "eyebrow": "World's first holographic 3D ear scanner",
       "title": "Hear better. Fit perfectly.",
-      "subhead": "AKuris scans the ear canal in seconds — no contact, no mess, no remakes. Real-time 3D data for the next generation of personalised hearing systems."
+      "subhead": "AKuris scans the ear canal in seconds, with no contact, no mess, and no remakes. Real-time 3D data for the next generation of personalised hearing systems."
     },
     "problem": {
       "eyebrow": "The problem",
@@ -53,7 +53,7 @@
     "solution": {
       "eyebrow": "The solution",
       "title": "A digital scan in seconds. A perfect fit the first time.",
-      "text": "AKuris captures the ear canal in 3D using light — contactless, hygienic, and precise. The result is real-time digital data ready for the manufacture of custom hearing systems."
+      "text": "AKuris captures the ear canal in 3D using light, contactless, hygienic, and precise. The result is real-time digital data ready for the manufacture of custom hearing systems."
     },
     "benefits": {
       "eyebrow": "Why AKuris",
@@ -87,7 +87,7 @@
       "eyebrow": "Built for everyone in the room",
       "patients": {
         "title": "For patients",
-        "desc": "A better start to better hearing — fast, clean, and comfortable."
+        "desc": "A better start to better hearing, fast, clean, and comfortable."
       },
       "audiologists": {
         "title": "For audiologists & clinics",
@@ -96,8 +96,8 @@
     },
     "platform": {
       "eyebrow": "More than a product",
-      "title": "A new 3D imaging platform — starting with hearing.",
-      "text": "AKuris is the first application of AKmira's digital optical holography — a technology compact enough to fit on a fraction of a fingertip. The same platform opens the door to 3D endoscopy, security, and beyond."
+      "title": "A new 3D imaging platform, starting with hearing.",
+      "text": "AKuris is the first application of AKmira's digital optical holography, a technology compact enough to fit on a fraction of a fingertip. The same platform opens the door to 3D endoscopy, security, and beyond."
     },
     "recognition": {
       "eyebrow": "Recognised innovation"
@@ -113,7 +113,7 @@
   },
   "akuris": {
     "hero": {
-      "title": "AKuris — the first non-contact 3D ear canal scanner.",
+      "title": "AKuris, the first non-contact 3D ear canal scanner.",
       "subhead": "The next generation of personalised hearing systems."
     },
     "problemText": "Traditional audiologist molds require filling the patient's ear with cold, heavy silicone paste, which can be uncomfortable, is prone to physical distortion, and requires shipping physical impressions to manufacturers. This adds delays, environmental waste, and costly remakes. AKuris eliminates this manual bottleneck.",
@@ -170,10 +170,10 @@
   },
   "technology": {
     "hero": {
-      "title": "Digital optical holography — seeing in 3D with light."
+      "title": "Digital optical holography, seeing in 3D with light."
     },
     "explainer": {
-      "plain": "AKmira's cameras read the 3D shape of a surface using light — the way sonar reads distance using sound, but with photons. No moving parts, no mechanical refocusing, and small enough to fit on a fraction of a fingertip.",
+      "plain": "AKmira's cameras read the 3D shape of a surface using light, the way sonar reads distance using sound, but with photons. No moving parts, no mechanical refocusing, and small enough to fit on a fraction of a fingertip.",
       "technicalHeader": "Technical Detail (For Specialists)",
       "technical": "Digital optical holography is an extension of known interference methods like Optical Coherence Tomography (OCT). By capturing phase interference between a reference beam and the backscattered light, our system measures surface topography and subsurface layers (~3 mm) without physical contact, operating at speed and optical resolution limits."
     },
@@ -212,11 +212,11 @@
       },
       "security": {
         "title": "Security technology",
-        "desc": "Contactless, high-precision 3D fingerprint acquisition for foolproof biometrics."
+        "desc": "Contactless, high-precision 3D fingerprint acquisition for high-security biometric identification."
       },
       "zoom": {
         "title": "3D zoom camera",
-        "desc": "Long-range 3D zoom sensing up to ~1 km, weighing under 100 g for drone and aerospace payloads."
+        "desc": "Long-range 3D zoom sensing up to ~1 km, weighing under 100 g for compact long-range imaging applications."
       }
     }
   },
@@ -232,12 +232,12 @@
     "founders": {
       "title": "Our Leadership Team",
       "knuettel": {
-        "name": "Dr. Alexander Knüttel",
+        "name": "Dr. A. Founder",
         "role": "Founder & CEO",
-        "bio": "Physicist, serial founder (previously ISIS optronics, sentronics metrology), first author on 27 patents, leading researcher in digital interferometry."
+        "bio": "Physicist, serial founder (previously ISIS optronics, sentronics metrology), author of multiple patents, leading researcher in digital interferometry."
       },
       "filling": {
-        "name": "Birte Filling",
+        "name": "Co-founder Name",
         "role": "Co-founder",
         "bio": "Management, B2B marketing, and the 'world of hearing' specialist."
       }
@@ -265,7 +265,7 @@
     "jobs": {
       "title": "Open Positions",
       "student": {
-        "title": "Working Student - Web Design & UI/UX",
+        "title": "Working Student: Web Design & UI/UX",
         "dept": "Marketing & IT",
         "location": "Potsdam / Hybrid",
         "desc": "Maintain and enhance the digital face of AKmira Optronics. Work closely with product management and marketing."

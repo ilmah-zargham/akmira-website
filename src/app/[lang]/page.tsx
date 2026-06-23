@@ -409,7 +409,7 @@ export default async function HomePage({ params }: { params: Promise<{ lang: str
             {[
               { num: "1st", label: "Innovation Award Berlin Brandenburg 2024" },
               { num: "9", label: "Own patents held by AKmira" },
-              { num: "27", label: "Patents by founder Dr. Knüttel" },
+              { num: "Multiple", label: "Patents by founder" },
               { num: "EU", label: "Co-financed European Union Development" }
             ].map((stat, i) => (
               <ScrollReveal key={i} delay={0.1 + i * 0.1}>

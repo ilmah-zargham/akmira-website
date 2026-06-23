@@ -325,7 +325,7 @@ export default async function AkurisPage({ params }: { params: Promise<{ lang: s
                     Featured Event
                   </span>
                   <h3 className="font-heading text-xl md:text-2xl font-bold text-white">
-                    EUHA 2025 – 69th International Congress of Hearing Aid Acousticians
+                    EUHA 2025: 69th International Congress of Hearing Aid Acousticians
                   </h3>
                   <p className="text-slate-400 text-sm leading-relaxed">
                     We will demonstrate AKuris live in Nuremberg. Meet the founders, physicists, and system engineers behind the technology.

@@ -84,12 +84,12 @@ export default async function CompanyPage({ params }: { params: Promise<{ lang: 
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mt-12">
             
-            {/* Dr. Alexander Knüttel */}
+            {/* Founder */}
             <ScrollReveal delay={0.15}>
               <div className="bg-mist border border-line rounded-3xl p-6 md:p-8 space-y-6 hover:shadow-sm transition-shadow flex flex-col justify-between h-full">
                 <div className="space-y-6">
                   {/* Photo placeholder */}
-                  <PlaceholderBox label="Dr. Knüttel Portrait" theme="light" aspectRatio="aspect-[3/4]" className="w-48 mx-auto" />
+                  <PlaceholderBox label="Founder Portrait" theme="light" aspectRatio="aspect-[3/4]" className="w-48 mx-auto" />
 
                   <div className="space-y-2 text-center">
                     <h3 className="font-heading text-xl font-bold text-ink">
@@ -112,7 +112,7 @@ export default async function CompanyPage({ params }: { params: Promise<{ lang: 
                     target="_blank" 
                     rel="noopener noreferrer" 
                     className="inline-flex items-center space-x-1.5 text-cyan-deep hover:text-ink font-semibold"
-                    aria-label="LinkedIn profile of Dr. Alexander Knüttel (Demo)"
+                    aria-label="LinkedIn profile of Founder (Demo)"
                   >
                     <svg className="h-4 w-4 fill-current" viewBox="0 0 24 24" aria-hidden="true">
                       <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.779-1.75-1.75s.784-1.75 1.75-1.75 1.75.779 1.75 1.75-.784 1.75-1.75 1.75zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
@@ -123,12 +123,12 @@ export default async function CompanyPage({ params }: { params: Promise<{ lang: 
               </div>
             </ScrollReveal>
 
-            {/* Birte Filling */}
+            {/* Co-founder */}
             <ScrollReveal delay={0.25}>
               <div className="bg-mist border border-line rounded-3xl p-6 md:p-8 space-y-6 hover:shadow-sm transition-shadow flex flex-col justify-between h-full">
                 <div className="space-y-6">
                   {/* Photo placeholder */}
-                  <PlaceholderBox label="Birte Filling Portrait" theme="light" aspectRatio="aspect-[3/4]" className="w-48 mx-auto" />
+                  <PlaceholderBox label="Co-founder Portrait" theme="light" aspectRatio="aspect-[3/4]" className="w-48 mx-auto" />
 
                   <div className="space-y-2 text-center">
                     <h3 className="font-heading text-xl font-bold text-ink">
@@ -151,7 +151,7 @@ export default async function CompanyPage({ params }: { params: Promise<{ lang: 
                     target="_blank" 
                     rel="noopener noreferrer" 
                     className="inline-flex items-center space-x-1.5 text-cyan-deep hover:text-ink font-semibold"
-                    aria-label="LinkedIn profile of Birte Filling (Demo)"
+                    aria-label="LinkedIn profile of Co-founder (Demo)"
                   >
                     <svg className="h-4 w-4 fill-current" viewBox="0 0 24 24" aria-hidden="true">
                       <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.779-1.75-1.75s.784-1.75 1.75-1.75 1.75.779 1.75 1.75-.784 1.75-1.75 1.75zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
