@@ -23,43 +23,38 @@ export default function AkurisHeroVisual() {
   }, [])
 
   return (
-    <div className="relative w-full aspect-[4/3] rounded-3xl border border-white/10 bg-gradient-to-b from-ink-soft/90 to-ink/95 shadow-2xl p-0 overflow-hidden group">
+    <div className="relative w-full aspect-[4/3] overflow-hidden group">
       {/* 1. Base Ear Image with gradient overlays to blend into background */}
-      <div className="absolute inset-0 select-none overflow-hidden rounded-3xl z-0">
+      <div className="absolute inset-0 select-none overflow-hidden z-0">
         <img 
           src="/ear-hero.png" 
           alt="Akuris Ear Scanning Visual" 
-          className="w-full h-full object-cover opacity-65 object-center transition-transform duration-1000 group-hover:scale-[1.03]"
+          className="w-full h-full object-cover opacity-65 object-center mix-blend-screen transition-transform duration-1000 group-hover:scale-[1.03]"
         />
-        {/* Holographic color tint overlays */}
-        <div className="absolute inset-0 bg-radial-gradient from-transparent via-ink/50 to-ink" />
-        <div className="absolute inset-0 bg-gradient-to-t from-ink via-transparent to-ink/40" />
-        <div className="absolute inset-0 bg-gradient-to-r from-ink/30 via-transparent to-ink/30" />
+        {/* Holographic color tint and edge softening overlays */}
+        <div 
+          className="absolute inset-0 pointer-events-none z-10" 
+          style={{
+            background: 'radial-gradient(circle at center, transparent 35%, #0A1322 85%)'
+          }}
+        />
+        <div className="absolute inset-x-0 top-0 h-16 bg-gradient-to-b from-[#0A1322] to-transparent pointer-events-none z-10" />
+        <div className="absolute inset-x-0 bottom-0 h-16 bg-gradient-to-t from-[#0A1322] to-transparent pointer-events-none z-10" />
+        <div className="absolute inset-y-0 left-0 w-16 bg-gradient-to-r from-[#0A1322] to-transparent pointer-events-none z-10" />
+        <div className="absolute inset-y-0 right-0 w-16 bg-gradient-to-l from-[#0A1322] to-transparent pointer-events-none z-10" />
       </div>
 
-      {/* 2. Symmetrical dynamic grid overlay (always present but subtle) */}
-      <div 
-        className="absolute inset-0 bg-[linear-gradient(rgba(25,201,216,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(25,201,216,0.03)_1px,transparent_1px)] bg-[size:16px_16px] pointer-events-none z-10" 
-        aria-hidden="true" 
-      />
-
-      {/* 3. Lagging scan trail overlay (shows the faint highlight tint and intense grid) */}
+      {/* 2. Lagging scan trail overlay (shows the faint highlight tint) */}
       <div 
         className="absolute left-0 right-0 h-[100px] -mt-[50px] pointer-events-none z-10 animate-scan-sweep"
         style={{ animationDelay: '120ms' }}
         aria-hidden="true"
       >
         {/* Symmetrical glowing background band (faint cyan highlight) */}
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-cyan/15 to-transparent" />
-        
-        {/* Active grid overlay that is only visible in the scan band */}
-        <div 
-          className="absolute inset-0 bg-[linear-gradient(rgba(25,201,216,0.12)_1px,transparent_1px),linear-gradient(90deg,rgba(25,201,216,0.12)_1px,transparent_1px)] bg-[size:16px_16px]"
-          style={{ mixBlendMode: 'screen' }}
-        />
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-cyan/12 to-transparent" />
       </div>
 
-      {/* 4. Leading scan line overlay (with wands/probes and bright laser line) */}
+      {/* 3. Leading scan line overlay (with wands/probes and bright laser line) */}
       <div className="absolute left-0 right-0 h-[80px] -mt-[40px] pointer-events-none z-20 animate-scan-sweep">
         {/* Bright scan line in the middle */}
         <div className="absolute left-0 right-0 top-1/2 -translate-y-1/2 h-[2px] bg-gradient-to-r from-transparent via-cyan to-transparent shadow-[0_0_15px_#19C9D8] z-20" />
@@ -98,7 +93,7 @@ export default function AkurisHeroVisual() {
         </div>
       </div>
 
-      {/* 5. Technical chips in top corners */}
+      {/* 4. Technical chips in top corners */}
       <div className="absolute top-4 left-4 z-30 bg-ink/75 border border-white/10 backdrop-blur-md rounded-lg px-3 py-1.5 text-[9px] font-mono tracking-widest text-slate-300 uppercase select-none">
         EAR CANAL · 3D SCAN
       </div>
@@ -108,7 +103,7 @@ export default function AkurisHeroVisual() {
         <span>REAL-TIME 3D</span>
       </div>
 
-      {/* 6. HUD Measurement SVG Graphic */}
+      {/* 5. HUD Measurement SVG Graphic */}
       <svg 
         viewBox="0 0 450 320" 
         className="absolute inset-0 w-full h-full select-none z-20 pointer-events-none" 
@@ -242,7 +237,7 @@ export default function AkurisHeroVisual() {
         </g>
       </svg>
 
-      {/* 7. Caption bar at bottom of the scanner container */}
+      {/* 6. Caption bar at bottom of the scanner container */}
       <div className="absolute bottom-4 left-4 right-4 bg-ink/80 border border-white/10 rounded-xl px-4 py-2.5 flex items-center justify-between pointer-events-none select-none backdrop-blur-md z-30">
         <span className="text-[10px] font-sans text-slate-300 font-medium tracking-wide flex items-center">
           <span className="h-1.5 w-1.5 rounded-full bg-cyan animate-pulse shadow-[0_0_6px_#19C9D8] mr-2" />
