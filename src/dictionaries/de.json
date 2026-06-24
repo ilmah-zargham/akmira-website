@@ -17,7 +17,8 @@
       "learnMore": "Mehr erfahren",
       "submit": "Nachricht senden",
       "downloadSpec": "Datenblatt herunterladen [PDF] (Demo)",
-      "findAudiologist": "Zertifizierten Akustiker finden (Demo)"
+      "findAudiologist": "Zertifizierten Akustiker finden (Demo)",
+      "jump3D": "Direkt zum 3D-Viewer →"
     },
     "labels": {
       "award": "1. Platz · Innovationspreis Berlin Brandenburg 2024",
@@ -113,8 +114,10 @@
   },
   "akuris": {
     "hero": {
-      "title": "AKuris, der erste berührungslose 3D-Gehörgangsscanner.",
-      "subhead": "Die nächste Generation personalisierter Hörsysteme."
+      "eyebrow": "WELTWEIT ERSTER HOLOGRAFISCHER 3D-OHRSCANNER",
+      "titleLine1": "Besser hören.",
+      "titleLine2": "Perfekt sitzen.",
+      "subhead": "Gehörgang in Sekundenschnelle scannen. Berührungslos, ohne Schmutz, ohne Nacharbeiten."
     },
     "problemText": "Traditionelle Abdrücke von Hörakustikern erfordern das Befüllen des Ohrs des Patienten mit kalter, schwerer Silikonpaste, was unangenehm sein kann, anfällig für physische Verformungen ist und den Versand physischer Abdrücke an die Hersteller erfordert. Dies führt zu Verzögerungen, Müllbelastung und teuren Neuanfertigungen. AKuris beseitigt diesen manuellen Engpass.",
     "steps": {

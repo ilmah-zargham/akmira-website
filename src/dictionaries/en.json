@@ -17,7 +17,8 @@
       "learnMore": "Learn more",
       "submit": "Send message",
       "downloadSpec": "Download spec sheet [PDF] (Demo)",
-      "findAudiologist": "Find certified audiologist (Demo)"
+      "findAudiologist": "Find certified audiologist (Demo)",
+      "jump3D": "Jump to 3D Viewer →"
     },
     "labels": {
       "award": "1st place · Innovation Award Berlin Brandenburg 2024",
@@ -113,8 +114,10 @@
   },
   "akuris": {
     "hero": {
-      "title": "AKuris, the first non-contact 3D ear canal scanner.",
-      "subhead": "The next generation of personalised hearing systems."
+      "eyebrow": "WORLD'S FIRST HOLOGRAPHIC 3D EAR SCANNER",
+      "titleLine1": "Hear better.",
+      "titleLine2": "Fit perfectly.",
+      "subhead": "Scan the ear canal in seconds. No contact, no mess, no remakes."
     },
     "problemText": "Traditional audiologist molds require filling the patient's ear with cold, heavy silicone paste, which can be uncomfortable, is prone to physical distortion, and requires shipping physical impressions to manufacturers. This adds delays, environmental waste, and costly remakes. AKuris eliminates this manual bottleneck.",
     "steps": {
