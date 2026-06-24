@@ -28,7 +28,7 @@ export default function Footer({ lang, dict }: FooterProps) {
               <span className="h-full w-full bg-ink rounded-[4px] flex items-center justify-center font-heading text-[10px] text-cyan">AK</span>
             </span>
             <span>
-              mira<span className="text-cyan text-sm font-light font-sans ml-1">Optronics</span>
+              mira <span className="text-cyan text-sm font-light font-sans">Optronics</span>
             </span>
           </Link>
           <p className="text-slate-400 text-sm max-w-xs leading-relaxed">

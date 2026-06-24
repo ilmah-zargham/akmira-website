@@ -141,7 +141,7 @@ export default async function HomePage({ params }: { params: Promise<{ lang: str
                 Highlights
               </span>
               <h2 className="font-heading text-3xl md:text-4xl font-bold tracking-tight text-white leading-tight">
-                Redefining 3D Holographic Metrology
+                {dict.home.teaser.title}
               </h2>
             </div>
           </ScrollReveal>

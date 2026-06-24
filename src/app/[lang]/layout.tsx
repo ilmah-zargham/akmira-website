@@ -45,11 +45,11 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
     openGraph: {
       title: 'AKmira Optronics GmbH',
       description: 'Next Generation Medical 3D Holographic Imaging',
-      url: 'https://akmira-optronics.de',
-      siteName: 'AKmira Optronics',
+      url: 'https://akmira-website.vercel.app/',
+      siteName: 'AKmira Optronics Concept',
       images: [
         {
-          url: '/images/og-share-placeholder.png',
+          url: '/images/og-share.png',
           width: 1200,
           height: 630,
           alt: 'AKmira Optronics 3D Ear Scanner',
