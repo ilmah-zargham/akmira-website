@@ -23,33 +23,95 @@ export default function AkurisHeroVisual() {
   }, [])
 
   return (
-    <div className="relative w-full aspect-[4/3] rounded-3xl border border-white/10 bg-gradient-to-b from-ink-soft/90 to-ink/95 shadow-2xl p-4 overflow-hidden group">
-      {/* Grid background overlay */}
+    <div className="relative w-full aspect-[4/3] rounded-3xl border border-white/10 bg-gradient-to-b from-ink-soft/90 to-ink/95 shadow-2xl p-0 overflow-hidden group">
+      {/* 1. Base Ear Image with gradient overlays to blend into background */}
+      <div className="absolute inset-0 select-none overflow-hidden rounded-3xl z-0">
+        <img 
+          src="/ear-hero.png" 
+          alt="Akuris Ear Scanning Visual" 
+          className="w-full h-full object-cover opacity-65 object-center transition-transform duration-1000 group-hover:scale-[1.03]"
+        />
+        {/* Holographic color tint overlays */}
+        <div className="absolute inset-0 bg-radial-gradient from-transparent via-ink/50 to-ink" />
+        <div className="absolute inset-0 bg-gradient-to-t from-ink via-transparent to-ink/40" />
+        <div className="absolute inset-0 bg-gradient-to-r from-ink/30 via-transparent to-ink/30" />
+      </div>
+
+      {/* 2. Symmetrical dynamic grid overlay (always present but subtle) */}
       <div 
-        className="absolute inset-0 bg-[linear-gradient(rgba(25,201,216,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(25,201,216,0.03)_1px,transparent_1px)] bg-[size:16px_16px] pointer-events-none" 
+        className="absolute inset-0 bg-[linear-gradient(rgba(25,201,216,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(25,201,216,0.03)_1px,transparent_1px)] bg-[size:16px_16px] pointer-events-none z-10" 
         aria-hidden="true" 
       />
 
-      {/* Sweeping scan line overlay */}
+      {/* 3. Lagging scan trail overlay (shows the faint highlight tint and intense grid) */}
       <div 
-        className="absolute left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-cyan to-transparent shadow-[0_0_12px_#19C9D8] opacity-80 animate-scan-sweep pointer-events-none z-10" 
+        className="absolute left-0 right-0 h-[100px] -mt-[50px] pointer-events-none z-10 animate-scan-sweep"
+        style={{ animationDelay: '120ms' }}
         aria-hidden="true"
-      />
+      >
+        {/* Symmetrical glowing background band (faint cyan highlight) */}
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-cyan/15 to-transparent" />
+        
+        {/* Active grid overlay that is only visible in the scan band */}
+        <div 
+          className="absolute inset-0 bg-[linear-gradient(rgba(25,201,216,0.12)_1px,transparent_1px),linear-gradient(90deg,rgba(25,201,216,0.12)_1px,transparent_1px)] bg-[size:16px_16px]"
+          style={{ mixBlendMode: 'screen' }}
+        />
+      </div>
 
-      {/* Technical chips in top corners */}
-      <div className="absolute top-4 left-4 z-10 bg-ink/70 border border-white/10 backdrop-blur-sm rounded-lg px-3 py-1.5 text-[9px] font-mono tracking-widest text-slate-300 uppercase select-none">
+      {/* 4. Leading scan line overlay (with wands/probes and bright laser line) */}
+      <div className="absolute left-0 right-0 h-[80px] -mt-[40px] pointer-events-none z-20 animate-scan-sweep">
+        {/* Bright scan line in the middle */}
+        <div className="absolute left-0 right-0 top-1/2 -translate-y-1/2 h-[2px] bg-gradient-to-r from-transparent via-cyan to-transparent shadow-[0_0_15px_#19C9D8] z-20" />
+        
+        {/* Additional high-glow blur line */}
+        <div className="absolute left-1/12 right-1/12 top-1/2 -translate-y-1/2 h-[6px] bg-cyan/40 blur-[3px] z-10" />
+
+        {/* Left Laser Wand/Probe indicator */}
+        <div className="absolute left-4 top-1/2 -translate-y-1/2 z-30 pointer-events-none flex items-center">
+          {/* Wand Probe visual body */}
+          <div className="flex items-center space-x-1.5 bg-ink/80 border border-cyan/35 rounded-md px-2 py-0.5 shadow-lg shadow-cyan/5">
+            <div className="w-1.5 h-1.5 rounded-full bg-cyan border border-white shadow-[0_0_8px_#19C9D8] relative flex items-center justify-center">
+              <span className="absolute w-1.5 h-1.5 rounded-full bg-cyan animate-ping opacity-75" />
+            </div>
+            <span className="font-mono text-[6.5px] text-cyan/95 tracking-wider uppercase font-semibold">
+              L-PROBE
+            </span>
+          </div>
+          {/* Connecting guide line */}
+          <div className="w-4 h-[1px] bg-gradient-to-r from-cyan/50 to-transparent border-t border-dashed border-cyan/30" />
+        </div>
+
+        {/* Right Laser Wand/Probe indicator */}
+        <div className="absolute right-4 top-1/2 -translate-y-1/2 z-30 pointer-events-none flex items-center">
+          {/* Connecting guide line */}
+          <div className="w-4 h-[1px] bg-gradient-to-l from-cyan/50 to-transparent border-t border-dashed border-cyan/30" />
+          {/* Wand Probe visual body */}
+          <div className="flex items-center space-x-1.5 bg-ink/80 border border-cyan/35 rounded-md px-2 py-0.5 shadow-lg shadow-cyan/5">
+            <span className="font-mono text-[6.5px] text-cyan/95 tracking-wider uppercase font-semibold">
+              R-PROBE
+            </span>
+            <div className="w-1.5 h-1.5 rounded-full bg-cyan border border-white shadow-[0_0_8px_#19C9D8] relative flex items-center justify-center">
+              <span className="absolute w-1.5 h-1.5 rounded-full bg-cyan animate-ping opacity-75" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* 5. Technical chips in top corners */}
+      <div className="absolute top-4 left-4 z-30 bg-ink/75 border border-white/10 backdrop-blur-md rounded-lg px-3 py-1.5 text-[9px] font-mono tracking-widest text-slate-300 uppercase select-none">
         EAR CANAL · 3D SCAN
       </div>
 
-      <div className="absolute top-4 right-4 z-10 bg-ink/70 border border-white/10 backdrop-blur-sm rounded-lg px-3 py-1.5 text-[9px] font-mono tracking-widest text-white uppercase flex items-center space-x-1.5 select-none">
+      <div className="absolute top-4 right-4 z-30 bg-ink/75 border border-white/10 backdrop-blur-md rounded-lg px-3 py-1.5 text-[9px] font-mono tracking-widest text-white uppercase flex items-center space-x-1.5 select-none">
         <span className="h-1.5 w-1.5 rounded-full bg-cyan animate-pulse shadow-[0_0_6px_#19C9D8]" />
         <span>REAL-TIME 3D</span>
       </div>
 
-      {/* Main SVG Graphic */}
+      {/* 6. HUD Measurement SVG Graphic */}
       <svg 
         viewBox="0 0 450 320" 
-        className="w-full h-full select-none" 
+        className="absolute inset-0 w-full h-full select-none z-20 pointer-events-none" 
         fill="none" 
         xmlns="http://www.w3.org/2000/svg"
       >
@@ -60,7 +122,7 @@ export default function AkurisHeroVisual() {
             <stop offset="100%" stopColor="#7C5CFF" />
           </linearGradient>
 
-          {/* Glowing filter for high-activity items (e.g. Isthmus ring) */}
+          {/* Glowing filter for high-activity items */}
           <filter id="neon-glow" x="-20%" y="-20%" width="140%" height="140%">
             <feGaussianBlur stdDeviation="3" result="blur" />
             <feMerge>
@@ -78,7 +140,7 @@ export default function AkurisHeroVisual() {
             cy={dot.y}
             r={dot.r}
             fill="#19C9D8"
-            opacity={0.12 + Math.random() * 0.25}
+            opacity={0.15 + Math.random() * 0.25}
             className="animate-pulse"
             style={{ 
               animationDelay: `${dot.delay}s`, 
@@ -87,31 +149,24 @@ export default function AkurisHeroVisual() {
           />
         ))}
 
-        {/* Outer guides representing the bounding limits of the scan */}
+        {/* Subtle holographic guide curves */}
         <path
           d="M 95 110 Q 180 95 240 102 T 375 115"
           stroke="url(#contour-gradient)"
           strokeWidth="0.8"
           strokeDasharray="3 4"
-          opacity="0.25"
+          opacity="0.18"
         />
         <path
           d="M 95 250 Q 180 215 240 182 T 375 220"
           stroke="url(#contour-gradient)"
           strokeWidth="0.8"
           strokeDasharray="3 4"
-          opacity="0.25"
-        />
-        <path
-          d="M 50 180 Q 180 152 240 142 T 375 168"
-          stroke="url(#contour-gradient)"
-          strokeWidth="0.8"
-          strokeDasharray="3 4"
           opacity="0.18"
         />
 
-        {/* Stylized stacked 3D contour rings of the ear canal */}
-        <g opacity="0.9">
+        {/* Stylized stacked 3D contour rings of the ear canal overlaying the image */}
+        <g opacity="0.32">
           {/* Ring 1 (Entrance) */}
           <ellipse cx="95" cy="180" rx="45" ry="70" stroke="url(#contour-gradient)" strokeWidth="1.2" opacity="0.20" transform="rotate(-12 95 180)" />
           {/* Ring 2 */}
@@ -138,62 +193,64 @@ export default function AkurisHeroVisual() {
           <ellipse cx="370" cy="164" rx="38" ry="55" stroke="url(#contour-gradient)" strokeWidth="1.6" opacity="1.0" transform="rotate(-4 370 164)" />
         </g>
 
-        {/* HUD Overlay lines, measurement points, and tags */}
-        
-        {/* ENTRANCE MEASUREMENT */}
+        {/* ENTRANCE MEASUREMENT TARGET */}
         <g>
-          {/* Dotted pointer lines */}
-          <path d="M 95 110 L 80 65 L 40 65" stroke="#19C9D8" strokeWidth="0.8" strokeDasharray="1 1" opacity="0.7" />
+          <path d="M 95 110 L 80 65 L 40 65" stroke="#19C9D8" strokeWidth="0.8" strokeDasharray="2 2" opacity="0.8" />
+          {/* Targeting circle lines */}
+          <circle cx="95" cy="110" r="5" stroke="#19C9D8" strokeWidth="0.8" opacity="0.5" />
+          <circle cx="95" cy="110" r="9" stroke="#19C9D8" strokeWidth="0.5" strokeDasharray="2 1" opacity="0.4" />
           <circle cx="95" cy="110" r="2.5" fill="#19C9D8" className="animate-ping" style={{ animationDuration: '2s' }} />
           <circle cx="95" cy="110" r="1.5" fill="#19C9D8" />
-          {/* Text fields */}
-          <text x="40" y="58" fill="#19C9D8" className="font-mono text-[9px] font-semibold tracking-wide" opacity="0.9">
+          <text x="40" y="58" fill="#19C9D8" className="font-mono text-[9px] font-semibold tracking-wide" opacity="0.95">
             Ø 7.2 mm
           </text>
-          <text x="40" y="50" fill="rgba(25, 201, 216, 0.5)" className="font-mono text-[7px] uppercase tracking-widest font-medium">
+          <text x="40" y="50" fill="rgba(25, 201, 216, 0.6)" className="font-mono text-[7px] uppercase tracking-widest font-medium">
             ENTRANCE
           </text>
         </g>
 
-        {/* ISTHMUS MEASUREMENT */}
+        {/* ISTHMUS MEASUREMENT TARGET */}
         <g>
-          {/* Dotted pointer lines */}
-          <path d="M 245 106 L 265 60 L 310 60" stroke="#7C5CFF" strokeWidth="0.8" strokeDasharray="1 1" opacity="0.7" />
+          <path d="M 245 106 L 265 60 L 310 60" stroke="#7C5CFF" strokeWidth="0.8" strokeDasharray="2 2" opacity="0.8" />
+          {/* Targeting circle lines */}
+          <circle cx="245" cy="106" r="5" stroke="#7C5CFF" strokeWidth="0.8" opacity="0.5" />
+          <circle cx="245" cy="106" r="9" stroke="#7C5CFF" strokeWidth="0.5" strokeDasharray="2 1" opacity="0.4" />
           <circle cx="245" cy="106" r="2.5" fill="#7C5CFF" className="animate-ping" style={{ animationDuration: '2s', animationDelay: '0.5s' }} />
           <circle cx="245" cy="106" r="1.5" fill="#7C5CFF" />
-          {/* Text fields */}
-          <text x="270" y="53" fill="#7C5CFF" className="font-mono text-[9px] font-semibold tracking-wide" opacity="0.9">
+          <text x="270" y="53" fill="#7C5CFF" className="font-mono text-[9px] font-semibold tracking-wide" opacity="0.95">
             Ø 5.4 mm
           </text>
-          <text x="270" y="45" fill="rgba(124, 92, 255, 0.5)" className="font-mono text-[7px] uppercase tracking-widest font-medium">
+          <text x="270" y="45" fill="rgba(124, 92, 255, 0.6)" className="font-mono text-[7px] uppercase tracking-widest font-medium">
             ISTHMUS
           </text>
         </g>
 
-        {/* DEPTH MEASUREMENT */}
+        {/* DEPTH MEASUREMENT TARGET */}
         <g>
-          {/* Dotted pointer lines */}
-          <path d="M 370 164 L 390 120 L 420 120" stroke="#19C9D8" strokeWidth="0.8" strokeDasharray="1 1" opacity="0.7" />
+          <path d="M 370 164 L 390 120 L 420 120" stroke="#19C9D8" strokeWidth="0.8" strokeDasharray="2 2" opacity="0.8" />
+          {/* Targeting circle lines */}
+          <circle cx="370" cy="164" r="5" stroke="#19C9D8" strokeWidth="0.8" opacity="0.5" />
+          <circle cx="370" cy="164" r="9" stroke="#19C9D8" strokeWidth="0.5" strokeDasharray="2 1" opacity="0.4" />
           <circle cx="370" cy="164" r="2.5" fill="#19C9D8" className="animate-ping" style={{ animationDuration: '2s', animationDelay: '1s' }} />
           <circle cx="370" cy="164" r="1.5" fill="#19C9D8" />
-          {/* Text fields */}
-          <text x="382" y="113" fill="#19C9D8" className="font-mono text-[9px] font-semibold tracking-wide" opacity="0.9">
+          <text x="382" y="113" fill="#19C9D8" className="font-mono text-[9px] font-semibold tracking-wide" opacity="0.95">
             depth 18.2 mm
           </text>
-          <text x="382" y="105" fill="rgba(25, 201, 216, 0.5)" className="font-mono text-[7px] uppercase tracking-widest font-medium">
+          <text x="382" y="105" fill="rgba(25, 201, 216, 0.6)" className="font-mono text-[7px] uppercase tracking-widest font-medium">
             PENETRATION
           </text>
         </g>
       </svg>
 
-      {/* Caption bar at bottom of the scanner container */}
-      <div className="absolute bottom-4 left-4 right-4 bg-ink/80 border border-white/5 rounded-xl px-4 py-2 flex items-center justify-between pointer-events-none select-none backdrop-blur-sm">
-        <span className="text-[10px] font-sans text-slate-300 font-medium">
-          Scan in seconds <span className="text-cyan">→</span> print-ready 3D model
+      {/* 7. Caption bar at bottom of the scanner container */}
+      <div className="absolute bottom-4 left-4 right-4 bg-ink/80 border border-white/10 rounded-xl px-4 py-2.5 flex items-center justify-between pointer-events-none select-none backdrop-blur-md z-30">
+        <span className="text-[10px] font-sans text-slate-300 font-medium tracking-wide flex items-center">
+          <span className="h-1.5 w-1.5 rounded-full bg-cyan animate-pulse shadow-[0_0_6px_#19C9D8] mr-2" />
+          Scanning… <span className="text-slate-500 mx-2">→</span> print-ready 3D model
         </span>
         <span className="flex items-center space-x-1.5">
-          <span className="h-1.5 w-1.5 rounded-full bg-emerald-500 animate-pulse shadow-[0_0_6px_#10B981]" />
-          <span className="font-mono text-[8px] text-emerald-400 font-bold tracking-widest uppercase">READY</span>
+          <span className="h-1.5 w-1.5 rounded-full bg-cyan animate-pulse shadow-[0_0_6px_#19C9D8]" />
+          <span className="font-mono text-[8px] text-cyan font-bold tracking-widest uppercase">ACTIVE</span>
         </span>
       </div>
     </div>
