@@ -151,20 +151,31 @@ export default async function TechnologyPage({ params }: { params: Promise<{ lan
             <div className="absolute top-[35px] left-[10%] right-[10%] h-[1px] bg-white/10 hidden lg:block" />
             <div className="absolute top-[35px] left-[10%] w-[40%] h-[1px] holographic-gradient hidden lg:block" />
 
+            {/* Timeline center line for mobile */}
+            <div className="absolute left-[35px] top-[35px] bottom-[35px] w-[1px] bg-white/10 lg:hidden -translate-x-1/2" />
+
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 relative z-10">
               
               {/* GEN 1 */}
               <ScrollReveal delay={0.15}>
-                <div className="space-y-4 lg:text-center flex lg:flex-col items-start lg:items-center space-x-4 lg:space-x-0">
+                <div className="space-y-4 text-left lg:text-center flex flex-row lg:flex-col items-start lg:items-center gap-4 lg:gap-0 relative animate-fade-in">
                   {/* Timeline circle icon */}
-                  <div className="h-[70px] w-[70px] rounded-full bg-cyan/15 border border-cyan/40 flex items-center justify-center flex-shrink-0 relative shadow-[0_0_15px_rgba(25,201,216,0.15)] mb-2">
-                    <span className="text-xs font-mono font-bold text-cyan">GEN 1</span>
+                  <div className="flex-shrink-0">
+                    <div className="h-[70px] w-[70px] rounded-full bg-ink border border-cyan/40 flex items-center justify-center relative shadow-[0_0_15px_rgba(25,201,216,0.15)] z-10 select-none">
+                      <span className="text-xs font-mono font-bold text-cyan">GEN 1</span>
+                    </div>
                   </div>
-                  <div className="space-y-2">
-                    <h3 className="font-heading text-lg font-bold text-white">
+                  {/* Content */}
+                  <div className="space-y-2 pt-1 lg:pt-4 flex-grow w-full">
+                    <h3 className="font-heading text-lg font-bold text-white leading-tight">
                       {dict.technology.roadmap.gen1.title}
                     </h3>
-                    <p className="text-slate-400 text-sm leading-relaxed max-w-xs lg:mx-auto">
+                    <div className="flex lg:justify-center">
+                      <span className="text-[9px] font-mono tracking-widest text-slate-400 bg-white/5 px-2.5 py-0.5 rounded border border-white/10 uppercase font-semibold">
+                        COMPLETE
+                      </span>
+                    </div>
+                    <p className="text-slate-400 text-sm leading-relaxed max-w-xs lg:mx-auto pt-1">
                       {dict.technology.roadmap.gen1.desc}
                     </p>
                   </div>
@@ -173,19 +184,26 @@ export default async function TechnologyPage({ params }: { params: Promise<{ lan
 
               {/* GEN 2 */}
               <ScrollReveal delay={0.25}>
-                <div className="space-y-4 lg:text-center flex lg:flex-col items-start lg:items-center space-x-4 lg:space-x-0">
+                <div className="space-y-4 text-left lg:text-center flex flex-row lg:flex-col items-start lg:items-center gap-4 lg:gap-0 relative animate-fade-in">
                   {/* Timeline circle icon */}
-                  <div className="h-[70px] w-[70px] rounded-full bg-cyan/20 border border-cyan flex items-center justify-center flex-shrink-0 relative shadow-[0_0_20px_rgba(25,201,216,0.3)] mb-2">
-                    <span className="text-xs font-mono font-bold text-white">GEN 2</span>
-                    {/* Active highlight */}
-                    <span className="absolute -top-1 -right-1 h-3 w-3 bg-cyan rounded-full border-2 border-ink animate-pulse" />
+                  <div className="flex-shrink-0">
+                    <div className="h-[70px] w-[70px] rounded-full bg-ink border border-cyan flex items-center justify-center relative shadow-[0_0_20px_rgba(25,201,216,0.35)] z-10 select-none">
+                      <span className="text-xs font-mono font-bold text-white">GEN 2</span>
+                      {/* Active highlight */}
+                      <span className="absolute -top-0.5 -right-0.5 h-3 w-3 bg-cyan rounded-full border-2 border-ink animate-pulse" />
+                    </div>
                   </div>
-                  <div className="space-y-2">
-                    <h3 className="font-heading text-lg font-bold text-white flex items-center lg:justify-center">
-                      <span>{dict.technology.roadmap.gen2.title}</span>
-                      <span className="ml-2 text-[9px] font-mono tracking-widest text-cyan bg-cyan/10 px-2 py-0.5 rounded border border-cyan/20">CURRENT</span>
+                  {/* Content */}
+                  <div className="space-y-2 pt-1 lg:pt-4 flex-grow w-full">
+                    <h3 className="font-heading text-lg font-bold text-white leading-tight">
+                      {dict.technology.roadmap.gen2.title}
                     </h3>
-                    <p className="text-slate-300 text-sm leading-relaxed max-w-xs lg:mx-auto">
+                    <div className="flex lg:justify-center">
+                      <span className="text-[9px] font-mono tracking-widest text-cyan bg-cyan/15 px-2.5 py-0.5 rounded border border-cyan/30 uppercase font-semibold">
+                        CURRENT
+                      </span>
+                    </div>
+                    <p className="text-slate-300 text-sm leading-relaxed max-w-xs lg:mx-auto pt-1">
                       {dict.technology.roadmap.gen2.desc}
                     </p>
                   </div>
@@ -194,23 +212,26 @@ export default async function TechnologyPage({ params }: { params: Promise<{ lan
 
               {/* GEN 3 */}
               <ScrollReveal delay={0.35}>
-                <div className="space-y-4 lg:text-center flex lg:flex-col items-start lg:items-center space-x-4 lg:space-x-0">
+                <div className="space-y-4 text-left lg:text-center flex flex-row lg:flex-col items-start lg:items-center gap-4 lg:gap-0 relative animate-fade-in">
                   {/* Timeline circle icon */}
-                  <div className="h-[70px] w-[70px] rounded-full bg-violet/15 border border-violet/30 flex items-center justify-center flex-shrink-0 relative mb-2">
-                    <span className="text-xs font-mono font-bold text-violet-300">GEN 3</span>
+                  <div className="flex-shrink-0">
+                    <div className="h-[70px] w-[70px] rounded-full bg-ink border border-violet/30 flex items-center justify-center relative shadow-[0_0_15px_rgba(124,92,255,0.15)] z-10 select-none">
+                      <span className="text-xs font-mono font-bold text-violet-300">GEN 3</span>
+                    </div>
                   </div>
-                  <div className="space-y-2">
-                    <h3 className="font-heading text-lg font-bold text-white">
+                  {/* Content */}
+                  <div className="space-y-2 pt-1 lg:pt-4 flex-grow w-full">
+                    <h3 className="font-heading text-lg font-bold text-white leading-tight">
                       {dict.technology.roadmap.gen3.title}
                     </h3>
-                    <p className="text-slate-400 text-sm leading-relaxed max-w-xs lg:mx-auto">
-                      {dict.technology.roadmap.gen3.desc}
-                    </p>
-                    <div className="pt-2">
-                      <span className="text-[9px] font-mono text-slate-400 bg-white/5 border border-white/10 px-2 py-0.5 rounded uppercase">
-                        Render Coming Soon
+                    <div className="flex lg:justify-center">
+                      <span className="text-[9px] font-mono tracking-widest text-violet-400 bg-violet-500/10 px-2.5 py-0.5 rounded border border-violet-500/20 uppercase font-semibold">
+                        PLANNED
                       </span>
                     </div>
+                    <p className="text-slate-400 text-sm leading-relaxed max-w-xs lg:mx-auto pt-1">
+                      {dict.technology.roadmap.gen3.desc}
+                    </p>
                   </div>
                 </div>
               </ScrollReveal>
