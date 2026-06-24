@@ -1,6 +1,7 @@
 {
   "common": {
     "nav": {
+      "home": "Home",
       "akuris": "AKuris",
       "technology": "Technology",
       "company": "Company",
@@ -40,9 +41,17 @@
   },
   "home": {
     "hero": {
-      "eyebrow": "World's first holographic 3D ear scanner",
-      "title": "Hear better. Fit perfectly.",
-      "subhead": "AKuris scans the ear canal in seconds, with no contact, no mess, and no remakes. Real-time 3D data for the next generation of personalised hearing systems."
+      "eyebrow": "WORLD'S FIRST HOLOGRAPHIC 3D EAR SCANNER",
+      "titleLine1": "Hear better.",
+      "titleLine2": "Fit perfectly.",
+      "subhead": "Scan the ear canal in seconds. No contact, no mess, no remakes."
+    },
+    "teaser": {
+      "akuris": "The world's first non-contact 3D ear canal scanner. A perfect fit in seconds, no mess and no remakes.",
+      "technology": "More than a product: a 3D imaging platform, starting with hearing and expanding into new fields.",
+      "company": "A deep-tech team building the future of 3D holographic imaging.",
+      "career": "Join us and help shape a world-first technology.",
+      "contact": "Book a demo or get in touch."
     },
     "problem": {
       "eyebrow": "The problem",

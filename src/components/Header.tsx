@@ -33,6 +33,7 @@ export default function Header({ lang, dict }: HeaderProps) {
   }, [pathname])
 
   const navLinks = [
+    { name: dict.common.nav.home, href: '/' },
     { name: dict.common.nav.akuris, href: '/akuris' },
     { name: dict.common.nav.technology, href: '/technology' },
     { name: dict.common.nav.company, href: '/company' },

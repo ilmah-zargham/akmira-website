@@ -1,6 +1,7 @@
 {
   "common": {
     "nav": {
+      "home": "Home",
       "akuris": "AKuris",
       "technology": "Technologie",
       "company": "Unternehmen",
@@ -40,9 +41,17 @@
   },
   "home": {
     "hero": {
-      "eyebrow": "Weltweit erster holografischer 3D-Gehörgangsscanner",
-      "title": "Besser hören. Perfekt sitzen.",
-      "subhead": "AKuris scannt den Gehörgang in Sekundenschnelle, berührungslos, sauber und ohne Abformmasse. Digitale 3D-Echtzeitdaten für die nächste Generation personalisierter Hörsysteme."
+      "eyebrow": "WELTWEIT ERSTER HOLOGRAFISCHER 3D-OHRSCANNER",
+      "titleLine1": "Besser hören.",
+      "titleLine2": "Perfekt sitzen.",
+      "subhead": "Gehörgang in Sekundenschnelle scannen. Berührungslos, ohne Schmutz, ohne Nacharbeiten."
+    },
+    "teaser": {
+      "akuris": "Der weltweit erste berührungslose 3D-Gehörgangsscanner. Perfekter Sitz in Sekunden, sauber und ohne Abformmasse.",
+      "technology": "Mehr als nur ein Produkt: Eine 3D-Bildgebungsplattform, beginnend mit dem Gehör und erweiterbar auf neue Bereiche.",
+      "company": "Ein Deep-Tech-Team, das die Zukunft der 3D-holografischen Bildgebung gestaltet.",
+      "career": "Kommen Sie zu uns und gestalten Sie eine weltweit führende Technologie mit.",
+      "contact": "Buchen Sie eine Demo oder kontaktieren Sie uns."
     },
     "problem": {
       "eyebrow": "Das Problem",
