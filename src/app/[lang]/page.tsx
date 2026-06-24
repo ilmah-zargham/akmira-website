@@ -9,7 +9,7 @@ import {
 import { getDictionary } from '../dictionaries'
 import ScrollReveal from '@/components/ScrollReveal'
 import ScanLine from '@/components/ScanLine'
-import AkurisHeroVisual from '@/components/AkurisHeroVisual'
+import HomeHeroVisual from '@/components/HomeHeroVisual'
 
 export default async function HomePage({ params }: { params: Promise<{ lang: string }> }) {
   const { lang } = await params
@@ -111,7 +111,7 @@ export default async function HomePage({ params }: { params: Promise<{ lang: str
             {/* Right Side Visual */}
             <div className="lg:col-span-5 w-full">
               <ScrollReveal delay={0.3}>
-                <AkurisHeroVisual />
+                <HomeHeroVisual />
               </ScrollReveal>
             </div>
           </div>
