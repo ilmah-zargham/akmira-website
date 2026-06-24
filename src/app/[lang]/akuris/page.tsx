@@ -75,18 +75,18 @@ export default async function AkurisPage({ params }: { params: Promise<{ lang: s
 
               {/* CTAs */}
               <ScrollReveal delay={0.4} className="flex flex-col sm:flex-row items-stretch sm:items-center space-y-4 sm:space-y-0 sm:space-x-4 pt-2">
+                <a 
+                  href="#live-demo-section" 
+                  className="bg-cyan hover:bg-cyan-deep text-ink hover:text-white font-sans text-sm font-semibold px-8 py-4 rounded-xl text-center transition-all duration-200 shadow-[0_4px_12px_rgba(25,201,216,0.25)] focus-ring"
+                >
+                  {dict.common.cta.seeItAction}
+                </a>
                 <Link 
                   href={getLocalizedHref('/contact')} 
-                  className="bg-cyan hover:bg-cyan-deep text-ink hover:text-white font-sans text-sm font-semibold px-8 py-4 rounded-xl text-center transition-all duration-200 shadow-[0_4px_12px_rgba(25,201,216,0.25)] focus-ring"
+                  className="border border-white/10 hover:border-white/20 bg-transparent text-slate-300 hover:text-white font-sans text-sm font-semibold px-8 py-4 rounded-xl text-center transition-all duration-200 focus-ring"
                 >
                   {dict.common.cta.bookDemo}
                 </Link>
-                <a 
-                  href="#live-demo-section" 
-                  className="border border-white/10 hover:border-white/20 bg-transparent text-slate-300 hover:text-white font-sans text-sm font-semibold px-8 py-4 rounded-xl text-center transition-all duration-200 focus-ring"
-                >
-                  {dict.common.cta.jump3D}
-                </a>
               </ScrollReveal>
 
               {/* Proof Strip (subtle icons row) */}
